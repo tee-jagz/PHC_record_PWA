@@ -20,8 +20,8 @@ function LoginPage() {
 
     const request = index.get(username);
 
-    console.log(staffStore);
-    console.log(index);
+    // console.log(staffStore);
+    // console.log(index);
 
     request.onsuccess = function (event) {
       const staff = event.target.result;

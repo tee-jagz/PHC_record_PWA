@@ -11,6 +11,8 @@ function openIndexedDB() {
     // Open the database
     const request = window.indexedDB.open(dbName, dbVersion);
 
+    
+
     // Define the schema
     request.onupgradeneeded = (event) => {
       const db = event.target.result;
@@ -43,6 +45,7 @@ function openIndexedDB() {
       visitStore.createIndex('conditionId', 'conditionId', { unique: false });
       visitStore.createIndex('dateOfDiagnosis', 'dateofDiagnosis', { unique: false });
       visitStore.createIndex('dateOfRecovery', 'dateofRecovery', { unique: false });
+      visitStore.createIndex('visitNotes', 'visitNotes', { unique: false });
 
       //Create the Medical Condition table
       const medicalConditionStore = db.createObjectStore("medicalConditions", { keyPath: "conditionId", autoIncrement: true });
@@ -51,14 +54,6 @@ function openIndexedDB() {
       medicalConditionStore.createIndex("severity", "severity", { unique: false });
       medicalConditionStore.createIndex("treatment", "treatment", { unique: false });
 
-
-      // Create the Medical History table
-      // const medicalHistoryStore = db.createObjectStore("medicalHistories", { keyPath: "id", autoIncrement: true });
-      // medicalHistoryStore.createIndex("patientId", "patientId", { unique: false });
-
-      // Create the Doctor table
-      // const doctorStore = db.createObjectStore("doctors", { keyPath: "doctorid", autoIncrement: true });
-      // doctorStore.createIndex("name", "name", { unique: false });
 
       // Create the Staff table
       const staffStore = db.createObjectStore("staff", { keyPath: "staffId", autoIncrement: true });
@@ -82,8 +77,21 @@ function openIndexedDB() {
 
     request.onsuccess = async (event) => {
       const db = event.target.result;
-      await addInitialData(db);
+
+      const patientStore = db.transaction("patients", "readonly").objectStore("patients");
+      const patientCountRequest = patientStore.count();
+
+      patientCountRequest.onsuccess = async () => {
+        // If there is no data in the patients object store, add the sample data
+        if (patientCountRequest.result === 0) {
+          await addInitialData(db);
+      }
       resolve(db);
+    }
+
+    patientCountRequest.onerror = () => {
+      reject("Error counting patients in the database");
+    };
     };
 
     request.onerror = (event) => {

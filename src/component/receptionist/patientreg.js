@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import openIndexedDB from '../../db';
-import ReceptionPage from './receptionist';
+import ReceptionMenu from './reception_menu';
 
 const PatientForm = () => {
   const [patient, setPatient] = useState({
@@ -44,7 +44,7 @@ const PatientForm = () => {
 
     return (
       <div>
-        <ReceptionPage />
+        <ReceptionMenu />
       <form style={{textAlign: 'center', paddingTop: '10%'}} onSubmit={handleSubmit}>
       <label>
         <input
