@@ -1,13 +1,17 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
+
 import RegisterPage from './component/register/register';
 import LoginPage from './component/login/login';  
 import PatientForm from './component/receptionist/patientreg';
 import HomePage from './component/home';
 import AppointmentPage from './component/receptionist/appointment';
-import DoctorPage from './component/doctor/doctor';
 import ReceptionPage from './component/receptionist/receptionist';
+import DoctorDashboard from './component/doctor/doctor_dashboard';
+import ActiveVisits from "./component/doctor/ActiveVisits";
+import PatientList from "./component/receptionist/patientList";
+import PatientDetails from "./component/receptionist/patientDetails";
 
 
 export function AppRoutes() {
@@ -18,8 +22,11 @@ export function AppRoutes() {
       <Route path="/login" exact element={<LoginPage />} />
       <Route path="/patientreg" exact element={<PatientForm />} />
       <Route path="/appointment" exact element={<AppointmentPage />} />
-      <Route path="/doctor" exact element={<DoctorPage />} />
       <Route path="/receptionist" exact element={<ReceptionPage />} />
+      <Route path="/active_visits" exact element={<ActiveVisits />} />
+      <Route path="/doctor_dashboard/:visitId" exact element={<DoctorDashboard />} />
+      <Route path="/patientList" exact element={<PatientList />} />
+      <Route path="/patient-details/:patientId" exact element={<PatientDetails />} />
     </Routes>
   );
 }

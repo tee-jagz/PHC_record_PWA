@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from 'antd';
-import { CalendarOutlined, UserAddOutlined } from '@ant-design/icons';
+import { CalendarOutlined, UserAddOutlined, UserOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
 function ReceptionMenu() {
@@ -11,6 +11,9 @@ function ReceptionMenu() {
       </Button>
       <Button type="link" icon={<UserAddOutlined />}>
         <Link to="/patientreg">Patient Registration</Link>
+      </Button>
+      <Button type="link" icon={<UserOutlined />}>
+        <Link to="/patientList">Patient List</Link>
       </Button>
     </div>
   );
