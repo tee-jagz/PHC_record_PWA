@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
 import openIndexedDB from "./../../db";
-import { useNavigate } from "react-router-dom";
+import { useNavigate  } from "react-router-dom";
 import DoctorMenu from "./DoctorMenu";
 import { Table } from "antd";
+import { useAuth } from "./../../useAuth";
 
 const ActiveVisits = () => {
   const [activeVisits, setActiveVisits] = useState([]);
   const navigate = useNavigate();
+  const { user, logout } = useAuth();
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // src/components/doctor/ActiveVisits.js
+useEffect(() => {
+  fetchData();
+}, []);
+
 
   const fetchData = async () => {
     const db = await openIndexedDB();
@@ -73,7 +77,7 @@ const ActiveVisits = () => {
     appointmentTime: visit.appointmentTime,
     reason: visit.reason,
   }));
-
+ 
   return (
     <div>
       <DoctorMenu />
