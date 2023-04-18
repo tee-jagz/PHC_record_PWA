@@ -74,7 +74,7 @@ function DoctorDashboard() {
     <div>
       <DoctorMenu />
       <h1>Doctor Dashboard</h1>
-      <Form onFinish={handleUpdate} initialValues={{ ...patient, ...visit }}>
+      <Form layout="vertical" onFinish={handleUpdate} initialValues={{ ...patient, ...visit }}>
         {/* Render patient and visit form fields here */}
         <h2>Patient Information</h2>
       <Form.Item label="First Name" name="firstName">
@@ -87,7 +87,7 @@ function DoctorDashboard() {
 
       {/* Visit form fields */}
       <h2>Visit Information</h2>
-      <Form.Item label="Appointment Date" name="appointmentDate">
+      <Form.Item layout="vertical" label="Appointment Date" name="appointmentDate">
         <Input />
       </Form.Item>
       <Form.Item label="Appointment Time" name="appointmentTime">

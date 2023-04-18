@@ -15,7 +15,6 @@ root.render(
       <AuthProvider>
     <Navbar />
     <App />
-    <FooterComp />
     </AuthProvider>
     </Router>
   </React.StrictMode>

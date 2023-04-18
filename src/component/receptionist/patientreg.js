@@ -1,206 +1,82 @@
-import React, { useState } from 'react';
+import React from 'react';
 import openIndexedDB from '../../db';
 import ReceptionMenu from './reception_menu';
+import { Form, Input, Select, Button, DatePicker } from 'antd';
+
+const { Option } = Select;
 
 const PatientForm = () => {
-  const [patient, setPatient] = useState({
-    firstName: '',
-    lastName: '',
-    gender: '',
-    dob: '',
-    address: '',
-    phoneNo: '',
-    email: '',
-    maritalStatus: '',
-    occupation: '',
-    bloodGroup: '',
-    genotype: '',
-    nextOfKin: '',
-    facilityID: ''
-    // add more fields as needed
-  });
+  const [form] = Form.useForm();
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (values) => {
     const db = await openIndexedDB();
     const tx = db.transaction('patients', 'readwrite');
     const store = tx.objectStore('patients');
-    await store.add(patient);
+    await store.add(values);
     await tx.complete;
-    setPatient({ firstName: '',
-    lastName: '',
-    gender: '',
-    dob: '',
-    address: '',
-    phoneNo: '',
-    email: '',
-    maritalStatus: '',
-    occupation: '',
-    bloodGroup: '',
-    genotype: '',
-    nextOfKin: '',
-    facilityID: '' /* reset other fields */ });
+    form.resetFields();
   };
 
-    return (
-      <div>
-        <ReceptionMenu />
-      <form style={{textAlign: 'center', paddingTop: '10%'}} onSubmit={handleSubmit}>
-      <label>
-        <input
-          type="text"
-          value={patient.firstName}
-          placeholder="First Name"
-          onChange={(event) =>
-            setPatient({ ...patient, firstName: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.lastName}
-          placeholder="Last Name"
-          onChange={(event) =>
-            setPatient({ ...patient, lastName: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <select
-          value={patient.gender}
-          onChange={(event) =>
-            setPatient({ ...patient, gender: event.target.value })
-          }
-        >
-          <option value="">Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-      </label>
-      <br />
-      <label>
-        <input
-          type="date"
-          value={patient.dob}
-          placeholder="Date of Birth"
-          onChange={(event) =>
-            setPatient({ ...patient, dob: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.address}
-          placeholder="Address"
-          onChange={(event) =>
-            setPatient({ ...patient, address: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="tel"
-          value={patient.phoneNo}
-          placeholder="Phone Number"
-          onChange={(event) =>
-            setPatient({ ...patient, phoneNo: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="email"
-          value={patient.email}
-          placeholder="Email"
-          onChange={(event) =>
-            setPatient({ ...patient, email: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <select
-          value={patient.maritalStatus}
-          onChange={(event) =>
-            setPatient({ ...patient, maritalStatus: event.target.value })
-          }
-        >
-          <option value="">Select Marital Status</option>
-          <option value="single">Single</option>
-          <option value="married">Married</option>
-          <option value="divorced">Divorced</option>
-          <option value="widowed">Widowed</option>
-        </select>
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.occupation}
-          placeholder="Occupation"
-          onChange={(event) =>
-            setPatient({ ...patient, occupation: event.target.value })
-          }
-        />
-        </label>
-        <br />
-      <label>
-        <input
-          type="text"
-          value={patient.bloodGroup}
-          placeholder="Blood Group"
-          onChange={(event) =>
-            setPatient({ ...patient, bloodGroup: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.genotype}
-          placeholder="Genotype"
-          onChange={(event) =>
-            setPatient({ ...patient, genotype: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.nextOfKin}
-          placeholder="Next of Kin"
-          onChange={(event) =>
-            setPatient({ ...patient, nextOfKin: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <label>
-        <input
-          type="text"
-          value={patient.facilityID}
-          placeholder="Facility ID"
-          onChange={(event) =>
-            setPatient({ ...patient, facilityID: event.target.value })
-          }
-        />
-      </label>
-      <br />
-      <button type="submit">Save</button>
-    </form>
+  return (
+    <div>
+      <ReceptionMenu />
+      <Form layout="vertical" form={form} onFinish={handleSubmit}>
+        <Form.Item label="First Name" name="firstName" rules={[{ required: true, message: 'Please input the first name!' }]}>
+          <Input placeholder="First Name" />
+        </Form.Item>
+        <Form.Item label="Last Name" name="lastName" rules={[{ required: true, message: 'Please input the last name!' }]}>
+          <Input placeholder="Last Name" />
+        </Form.Item>
+        <Form.Item label="Gender" name="gender" rules={[{ required: true, message: 'Please select the gender!' }]}>
+          <Select placeholder="Select Gender">
+            <Option value="male">Male</Option>
+            <Option value="female">Female</Option>
+            <Option value="other">Other</Option>
+          </Select>
+        </Form.Item>
+        <Form.Item label="Date of Birth" name="dob" rules={[{ required: true, message: 'Please select the date of birth!' }]}>
+          <DatePicker />
+        </Form.Item>
+        <Form.Item label="Address" name="address" rules={[{ required: true, message: 'Please input the address!' }]}>
+          <Input placeholder="Address" />
+        </Form.Item>
+        <Form.Item label="Phone Number" name="phoneNo" rules={[{ required: true, message: 'Please input the phone number!' }]}>
+          <Input placeholder="Phone Number" />
+        </Form.Item>
+        <Form.Item label="Email" name="email" rules={[{ required: true, message: 'Please input the email!' }]}>
+          <Input placeholder="Email" />
+        </Form.Item>
+        <Form.Item label="Marital Status" name="maritalStatus" rules={[{ required: true, message: 'Please select the marital status!' }]}>
+          <Select placeholder="Select Marital Status">
+            <Option value="single">Single</Option>
+            <Option value="married">Married</Option>
+            <Option value="divorced">Divorced</Option>
+            <Option value="widowed">Widowed</Option>
+          </Select>
+        </Form.Item>
+        <Form.Item label="Occupation" name="occupation" rules={[{ required: true, message: 'Please input the occupation!' }]}>
+          <Input placeholder="Occupation" />
+        </Form.Item>
+        <Form.Item label="Blood Group" name="bloodGroup">
+          <Input placeholder="Blood Group" />
+        </Form.Item>
+        <Form.Item label="Genotype" name="genotype">
+          <Input placeholder="Genotype" />
+        </Form.Item>
+        <Form.Item label="Next of Kin" name="nextOfKin">
+          <Input placeholder="Next of Kin" />
+          </Form.Item>
+        <Form.Item label="Facility ID" name="facilityID">
+          <Input placeholder="Facility ID" />
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Save
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
     );
   };
-
 
 export default PatientForm;

@@ -49,7 +49,7 @@ function PatientDetails() {
     <div>
         <ReceptionMenu />
       <h1>Patient Details</h1>
-      <Form onFinish={handleUpdate} initialValues={patient}>
+      <Form layout="vertical" onFinish={handleUpdate} initialValues={patient}>
         {/* Patient form fields */}
         <Form.Item label="First Name" name="firstName">
           <Input />

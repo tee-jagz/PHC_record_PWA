@@ -15,7 +15,7 @@ function DoctorMenu() {
   };
 
   return (
-    <Menu mode="horizontal" selectable={false}>
+    <Menu mode="horizontal" selectable={false} style={{ display: "flex", justifyContent: "space-between" }}>
       <Menu.Item key="activeVisits" icon={<CalendarOutlined />}>
         <Link to="/active_visits">Active Visits</Link>
       </Menu.Item>

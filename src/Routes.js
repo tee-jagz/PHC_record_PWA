@@ -8,7 +8,6 @@ import LoginPage from './component/login/login';
 import PatientForm from './component/receptionist/patientreg';
 import HomePage from './component/home';
 import AppointmentPage from './component/receptionist/appointment';
-import ReceptionPage from './component/receptionist/receptionist';
 import DoctorDashboard from './component/doctor/doctor_dashboard';
 import ActiveVisits from "./component/doctor/ActiveVisits";
 import PatientList from "./component/receptionist/patientList";
@@ -23,7 +22,6 @@ export function AppRoutes() {
       <Route path="/login" exact element={<LoginPage />} />
       <Route path="/patientreg" exact element={<PatientForm />} />
       <Route path="/appointment" exact element={<AppointmentPage />} />
-      <Route path="/receptionist" exact element={<ReceptionPage />} />
       {/* <Route path="/active_visits" exact element={<ActiveVisits />} /> */}
       <Route path="/patientList" exact element={<PatientList />} />
       <Route path="/patient-details/:patientId" exact element={<PatientDetails />} />

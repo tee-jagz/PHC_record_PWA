@@ -32,6 +32,7 @@ function openIndexedDB() {
       patientStore.createIndex("genotype", "genotype", { unique: false });
       patientStore.createIndex("nextOfKin", "nextOfKin", { unique: false });
       patientStore.createIndex("facilityID", "facilityID", { unique: false });
+      patientStore.createIndex("synced", "synced", { unique: false });
 
       // Create the Visit table
       const visitStore = db.createObjectStore("visits", { keyPath: "visitId", autoIncrement: true });
@@ -46,6 +47,7 @@ function openIndexedDB() {
       visitStore.createIndex('dateOfDiagnosis', 'dateofDiagnosis', { unique: false });
       visitStore.createIndex('dateOfRecovery', 'dateofRecovery', { unique: false });
       visitStore.createIndex('visitNotes', 'visitNotes', { unique: false });
+      visitStore.createIndex("synced", "synced", { unique: false });
 
       //Create the Medical Condition table
       const medicalConditionStore = db.createObjectStore("medicalConditions", { keyPath: "conditionId", autoIncrement: true });
@@ -53,7 +55,7 @@ function openIndexedDB() {
       medicalConditionStore.createIndex("description", "description", { unique: false });
       medicalConditionStore.createIndex("severity", "severity", { unique: false });
       medicalConditionStore.createIndex("treatment", "treatment", { unique: false });
-
+      medicalConditionStore.createIndex("synced", "synced", { unique: false });
 
       // Create the Staff table
       const staffStore = db.createObjectStore("staff", { keyPath: "staffId", autoIncrement: true });
@@ -65,6 +67,7 @@ function openIndexedDB() {
       staffStore.createIndex("email", "email", { unique: true });
       staffStore.createIndex("role", "role", { unique: false });
       staffStore.createIndex("facilityID", "facilityID", { unique: false });
+      staffStore.createIndex("synced", "synced", { unique: false });
 
       // Create the Facility table
       const facilityStore = db.createObjectStore('facilityStore', { keyPath: 'facilityId' });
@@ -73,6 +76,7 @@ function openIndexedDB() {
       facilityStore.createIndex('LGA', 'LGA');
       facilityStore.createIndex('Street', 'Street');
       facilityStore.createIndex('Email', 'Email');
+      facilityStore.createIndex('synced', 'synced', { unique: false });
     };
 
     request.onsuccess = async (event) => {
