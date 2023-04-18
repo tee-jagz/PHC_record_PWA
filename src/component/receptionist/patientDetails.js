@@ -35,7 +35,7 @@ function PatientDetails() {
     const request = patientStore.put({ ...patient, ...values });
 
     request.onsuccess = () => {
-      navigate("/patient-list");
+      navigate("/patientList");
     };
 
     request.onerror = () => {

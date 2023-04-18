@@ -1,87 +1,61 @@
-import React, { useState } from "react";
-import openIndexedDB from "../../db";
-import { BrowserRouter, Routes, Route, NavLink, Navigate } from 'react-router-dom'; 
+import React, { useState, useEffect } from "react";
+import { Form, Input, Button, Typography } from "antd";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "./../../useAuth";
 
-function LoginPage() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [redirectPath, setRedirectPath] = useState(""); // set the default redirect path to home page
+const { Title } = Typography;
 
-  async function handleLogin(event) {
-    event.preventDefault();
-    setLoading(true);
+const LoginForm = () => {
+  const [error, setError] = useState("");
+  const { login, user } = useAuth();
+  const navigate = useNavigate();
 
-    const db = await openIndexedDB();
-    const transaction = db.transaction(["staff"], "readonly");
-    const staffStore = transaction.objectStore("staff");
-    const index = staffStore.index("username");
-
-
-    const request = index.get(username);
-
-    // console.log(staffStore);
-    // console.log(index);
-
-    request.onsuccess = function (event) {
-      const staff = event.target.result;
-
-      if (staff && staff.password === password) {
-        //onLogin(staff);
-        console.log(staff)
-        alert("Login successful");
-        setLoading(false);
-
-         // set the redirect path based on some condition
-         if (staff.role === "doctor") {
-          setRedirectPath("/doctor"); // set the redirect path to doctor page
-        } else {
-          setRedirectPath("/receptionist"); // set the redirect path to appointment page
-        }
-        
-      } else {
-        alert("Invalid username or password");
-        setLoading(false);
+  useEffect(() => {
+    if (user) {
+      console.log("user", user);
+      if (user.role === "doctor") {
+        navigate("/active_visits", { replace: true });
+      } else if (user.role === "receptionist") {
+        navigate("/appointment", { replace: true });
       }
-    };
-  }
+    }
+  }, [user, navigate]);
 
+  const onFinish = async (values) => {
+    try {
+      await login(values.username, values.password);
+    } catch (err) {
+      setError(err.message);
+    }
+  }; 
+  
   return (
     <div>
-      
-      <h1>Login</h1>
-      <form style={{paddingTop: "30%", textAlign: 'center'}} onSubmit={handleLogin}>
-         <label>
-          {/*Username <br /> */}
-          <input
-            type="text"
-            value={username}
-            placeholder="Username"
-            onChange={(event) => setUsername(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          {/* Password <br /> */}
-          <input
-            type="password"
-            value={password}
-            placeholder="Password"
-            onChange={(event) => setPassword(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit" disabled={loading}>
-          Login
-        </button>
-      </form>
-             
-            {/* use the Navigate component to redirect to the appropriate page if the redirect path is not empty */}
-            {redirectPath && <Navigate to={redirectPath} />}
+      <Title>Login</Title>
+      <Form onFinish={onFinish}>
+        <Form.Item
+          label="Username"
+          name="username"
+          rules={[{ required: true, message: "Please input your username!" }]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
+          label="Password"
+          name="password"
+          rules={[{ required: true, message: "Please input your password!" }]}
+        >
+          <Input.Password />
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Login
+          </Button>
+        </Form.Item>
+      </Form>
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
-}
+};
 
-export default LoginPage;
+export default LoginForm;

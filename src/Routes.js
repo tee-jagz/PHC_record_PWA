@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import ProtectedRoute from "./component/ProtectedRoute";
 
 
 import RegisterPage from './component/register/register';
@@ -23,10 +24,27 @@ export function AppRoutes() {
       <Route path="/patientreg" exact element={<PatientForm />} />
       <Route path="/appointment" exact element={<AppointmentPage />} />
       <Route path="/receptionist" exact element={<ReceptionPage />} />
-      <Route path="/active_visits" exact element={<ActiveVisits />} />
-      <Route path="/doctor_dashboard/:visitId" exact element={<DoctorDashboard />} />
+      {/* <Route path="/active_visits" exact element={<ActiveVisits />} /> */}
       <Route path="/patientList" exact element={<PatientList />} />
       <Route path="/patient-details/:patientId" exact element={<PatientDetails />} />
+
+      {/* Doctors pages */}
+      <Route
+        path="/doctor_dashboard/:visitId"
+        element={
+          <ProtectedRoute allowedRoles={['doctor']}>
+            <DoctorDashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/active_visits"
+        element={
+          <ProtectedRoute allowedRoles={['doctor']}>
+            <ActiveVisits />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }
