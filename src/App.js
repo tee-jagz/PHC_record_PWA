@@ -1,19 +1,18 @@
 import React from 'react';
-
 import {AppRoutes} from './Routes';
-//import './App.css';
+//import { useSyncDatabases } from './useSyncDatabases';
 
 
 
 function App() {
+  //useSyncDatabases();
   return (
-    <div style={{width:'100%', paddingTop: '10%', paddingLeft: '10px'}}>
+    <div style={{paddingRight: '1rem', paddingLeft: '1rem'}}>
     <AppRoutes />
     </div>
     
   );
 }
-
 
 
 export default App;
