@@ -1,6 +1,5 @@
 import React from 'react';
 import openIndexedDB from '../../db';
-import ReceptionMenu from './reception_menu';
 import { Form, Input, Select, Button, DatePicker } from 'antd';
 
 const { Option } = Select;
@@ -12,6 +11,9 @@ const PatientForm = () => {
     const db = await openIndexedDB();
     const tx = db.transaction('patients', 'readwrite');
     const store = tx.objectStore('patients');
+
+    // Add the 'synced' property with a default value of false
+    values.synced = false;
     await store.add(values);
     await tx.complete;
     form.resetFields();
@@ -19,7 +21,6 @@ const PatientForm = () => {
 
   return (
     <div>
-      <ReceptionMenu />
       <Form layout="vertical" form={form} onFinish={handleSubmit}>
         <Form.Item label="First Name" name="firstName" rules={[{ required: true, message: 'Please input the first name!' }]}>
           <Input placeholder="First Name" />

@@ -8,7 +8,7 @@ const ProtectedRoute = ({ allowedRoles, children }) => {
 
   if (!user) {
     // If the user is not authenticated, redirect them to the login page
-    return <Navigate to="/login" state={{ from: location }} />;
+    return <Navigate to="/" state={{ from: location }} />;
   } else if (allowedRoles && !allowedRoles.includes(user.role)) {
     console.log('user.role', user.role)
     // If the user's role is not within the allowed roles, redirect them to an appropriate error page or another page

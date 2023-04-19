@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import openIndexedDB from "./../../db";
 import { Form, Input, Button } from "antd";
-import DoctorMenu from "./DoctorMenu";
 
 function DoctorDashboard() {
   const { visitId } = useParams();
@@ -59,6 +58,7 @@ function DoctorDashboard() {
   };
 
   const handleUpdate = (values) => {
+    values.synced = false;
     const updatedPatient = { ...patient, ...values };
     const updatedVisit = { ...visit, ...values };
 
@@ -72,7 +72,6 @@ function DoctorDashboard() {
 
   return (
     <div>
-      <DoctorMenu />
       <h1>Doctor Dashboard</h1>
       <Form layout="vertical" onFinish={handleUpdate} initialValues={{ ...patient, ...visit }}>
         {/* Render patient and visit form fields here */}

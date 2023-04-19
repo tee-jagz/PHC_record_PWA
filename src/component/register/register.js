@@ -1,27 +1,23 @@
 import React, { useState } from "react";
 import openIndexedDB from "../../db";
+import { Form, Input, Button, Select, message } from "antd";
+
+
+const { Option } = Select;
 
 function RegisterPage({ db }) {
-  const [username, setUsername] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [role, setRole] = useState("");
   const [loading, setLoading] = useState(false);
 
   const resetForm = () => {
-    setUsername("");
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPassword("");
-    setRole("");
+    form.resetFields();
   };
 
-  async function handleRegister(event) {
-    event.preventDefault();
+  const [form] = Form.useForm();
+
+  async function handleRegister(values) {
     setLoading(true);
+
+    const { username, firstName, lastName, email, password, role } = values;
 
     const db = await openIndexedDB();
     const transaction = db.transaction(["staff"], "readwrite");
@@ -34,82 +30,89 @@ function RegisterPage({ db }) {
       email,
       password,
       role,
+      synced: false,
     };
 
     staffStore.add(staff);
     resetForm();
     setLoading(false);
-    alert("Registration successful");
-    
+    message.success("Registration successful");
   }
 
   return (
     <>
       <h1>Register</h1>
-      <form style={{textAlign: 'center', paddingTop: '10%'}} onSubmit={handleRegister}>
-        <label>
-          <input
-            type="text"
-            value={username}
-            placeholder="Username"
-            onChange={(event) => setUsername(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          <input
-            type="text"
-            value={firstName}
-            placeholder = "First Name"
-            onChange={(event) => setFirstName(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          <input
-            type="text"
-            value={lastName}
-            placeholder = "Last Name"
-            onChange={(event) => setLastName(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          <input
-            type="email"
-            value={email}
-            placeholder = "Email"
-            onChange={(event) => setEmail(event.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          <input
-            type="password"
-            value={password}
-            placeholder = "Password"
-            onChange={(event) => setPassword(event.target.value)}
-            minLength={4}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          <select value={role} onChange={(event) => setRole(event.target.value)} required>
-            <option value="">Role</option>
-            <option value="doctor">Doctor</option>
-            <option value="receptionist">Receptionist</option>
-          </select>
-        </label>
-        <br />
-        <button type="submit" disabled={loading}>
-          Register
-        </button>
-      </form>
+      <Form
+        layout="vertical"
+        form={form}
+        onFinish={handleRegister}
+      >
+        <Form.Item
+        label="Username"
+          name="username"
+          rules={[{ required: true, message: "Please input your username!" }]}
+        >
+          <Input placeholder="Username" />
+        </Form.Item>
+        <Form.Item
+          label="First Name"
+          name="firstName"
+          rules={[{ required: true, message: "Please input your first name!" }]}
+        >
+          <Input placeholder="First Name" />
+        </Form.Item>
+        <Form.Item
+          label="Last Name"
+          name="lastName"
+          rules={[{ required: true, message: "Please input your last name!" }]}
+        >
+          <Input placeholder="Last Name" />
+        </Form.Item>
+        <Form.Item
+          label="Email"
+          name="email"
+          rules={[
+            {
+              required: true,
+              type: "email",
+              message: "Please input a valid email!",
+            },
+          ]}
+        >
+          <Input placeholder="Email" />
+        </Form.Item>
+        <Form.Item
+          label="Password"
+          name="password"
+          rules={[
+            {
+              required: true,
+              message: "Please input your password!",
+            },
+            {
+              min: 4,
+              message: "Password must be at least 4 characters long!",
+            },
+          ]}
+        >
+          <Input.Password placeholder="Password" />
+        </Form.Item>
+        <Form.Item
+          label="Role"
+          name="role"
+          rules={[{ required: true, message: "Please select a role!" }]}
+        >
+          <Select placeholder="Role">
+            <Option value="doctor">Doctor</Option>
+            <Option value="receptionist">Receptionist</Option>
+          </Select>
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" htmlType="submit" loading={loading}>
+            Register
+          </Button>
+        </Form.Item>
+      </Form>
     </>
   );
 }

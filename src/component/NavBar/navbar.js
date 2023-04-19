@@ -1,28 +1,75 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
-import { HomeOutlined, LoginOutlined, UserAddOutlined } from '@ant-design/icons';
+import { Link, useNavigate } from 'react-router-dom';
+import { Layout, Menu, Button } from 'antd';
+import { HomeOutlined, LoginOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
+import { useAuth } from "./../../useAuth";
+import DoctorMenu from './DoctorMenu';
+import ReceptionMenu from './reception_menu';
+
 
 const { Header } = Layout;
 
+
 function Navbar() {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
+
+  if (!user) {
+    return (
+      <Layout className="navbar">
+        <Header>
+          <Menu  mode="horizontal" theme="dark">
+            <Menu.Item key="login" icon={<LoginOutlined />}>
+              <Link to="/">Login</Link>
+            </Menu.Item>
+            <Menu.Item key="register" icon={<UserAddOutlined />}>
+              <Link to="/register">Register</Link>
+            </Menu.Item>
+            
+          </Menu>
+        </Header>
+      </Layout>
+    );
+  } else if (user.role === "receptionist")
+  {
   return (
-    <Layout>
-      <Header style={{ position: 'fixed', top: '0', width: '100%' }}>
-        <Menu mode="horizontal" theme="dark">
-          <Menu.Item key="home" icon={<HomeOutlined />}>
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="login" icon={<LoginOutlined />}>
-            <Link to="/login">Login</Link>
-          </Menu.Item>
-          <Menu.Item key="register" icon={<UserAddOutlined />}>
-            <Link to="/register">Register</Link>
+    <div className="navbar">
+    <Layout >
+      <Header>
+        <Menu  mode="horizontal" theme="dark">
+          <Menu.Item onClick={handleLogout} key="logout" icon={<LogoutOutlined />}>
+          Logout
           </Menu.Item>
         </Menu>
+
       </Header>
     </Layout>
+    <ReceptionMenu />
+    </div>
   );
+} else if (user.role === "doctor") {
+     
+      return (
+        <div className="navbar">
+    <Layout >
+      <Header>
+        <Menu  mode="horizontal" theme="dark">
+          <Menu.Item onClick={handleLogout} key="logout" icon={<LogoutOutlined />}>
+          Logout
+          </Menu.Item>
+        </Menu>
+
+      </Header>
+    </Layout>
+    <DoctorMenu />
+    </div>
+      );
+      }
 }
 
 export default Navbar;

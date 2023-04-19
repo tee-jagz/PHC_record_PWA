@@ -32,7 +32,7 @@ const LoginForm = () => {
   return (
     <div>
       <Title>Login</Title>
-      <Form onFinish={onFinish}>
+      <Form layout="vertical" onFinish={onFinish}>
         <Form.Item
           label="Username"
           name="username"

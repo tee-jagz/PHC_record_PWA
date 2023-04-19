@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import openIndexedDB from "./../../db";
 import { useNavigate  } from "react-router-dom";
-import DoctorMenu from "./DoctorMenu";
 import { Table } from "antd";
 import { useAuth } from "./../../useAuth";
 
@@ -80,7 +79,6 @@ useEffect(() => {
  
   return (
     <div>
-      <DoctorMenu />
       <h2>Active Visits</h2>
       <Table
         columns={columns}

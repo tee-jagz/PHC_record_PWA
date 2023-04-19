@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Table } from "antd";
 import { useNavigate } from "react-router-dom";
 import openIndexedDB from "./../../db";
-import ReceptionMenu from "./reception_menu";
 
 function PatientList() {
   const [patients, setPatients] = useState([]);
@@ -40,7 +39,6 @@ function PatientList() {
 
   return (
     <div>
-      <ReceptionMenu />
       <h1>Patient List</h1>
       <Table
         dataSource={patients}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import openIndexedDB from "./../../db";
-import ReceptionMenu from './reception_menu';
 import { Form, Input, Button, DatePicker, TimePicker, Select } from "antd";
 
 const { Option } = Select;
@@ -21,6 +20,7 @@ const AddAppointment = () => {
       appointmentTime,
       reason,
       status,
+      synced: false,
     };
 
     visitsStore.add(newVisit);
@@ -32,7 +32,6 @@ const AddAppointment = () => {
 
   return (
     <div>
-      <ReceptionMenu />
       <h2>Add Appointment</h2>
       <Form layout="vertical" form={form} onFinish={handleSubmit}>
         <Form.Item label="Patient ID" name="patientId" rules={[{ required: true, message: "Please input the patient ID!" }]}>

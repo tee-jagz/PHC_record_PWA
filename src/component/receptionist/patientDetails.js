@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Form, Input, Button } from "antd";
 import openIndexedDB from "./../../db";
-import ReceptionMenu from "./reception_menu";
 
 function PatientDetails() {
   const [patient, setPatient] = useState(null);
@@ -32,6 +31,9 @@ function PatientDetails() {
     const db = await openIndexedDB();
     const transaction = db.transaction("patients", "readwrite");
     const patientStore = transaction.objectStore("patients");
+
+    // Add the 'synced' property with a default value of false
+    values.synced = false;
     const request = patientStore.put({ ...patient, ...values });
 
     request.onsuccess = () => {
@@ -47,7 +49,6 @@ function PatientDetails() {
 
   return (
     <div>
-        <ReceptionMenu />
       <h1>Patient Details</h1>
       <Form layout="vertical" onFinish={handleUpdate} initialValues={patient}>
         {/* Patient form fields */}
