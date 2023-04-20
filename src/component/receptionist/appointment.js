@@ -8,11 +8,14 @@ const AddAppointment = () => {
   const [form] = Form.useForm();
 
   const handleSubmit = async (values) => {
-    const { patientId, appointmentDate, appointmentTime, reason, status } = values;
-
+    const { patientId, newDate, newTime, reason, status } = values;
+    
     const db = await openIndexedDB();
     const tx = db.transaction("visits", "readwrite");
     const visitsStore = tx.objectStore("visits");
+
+    const appointmentDate = newDate.format("YYYY-MM-DD");
+    const appointmentTime = newTime.format("HH:mm");
 
     const newVisit = {
       patientId: parseInt(patientId),
@@ -30,6 +33,7 @@ const AddAppointment = () => {
     form.resetFields();
   };
 
+  
   return (
     <div>
       <h2>Add Appointment</h2>
@@ -37,10 +41,10 @@ const AddAppointment = () => {
         <Form.Item label="Patient ID" name="patientId" rules={[{ required: true, message: "Please input the patient ID!" }]}>
           <Input type="number" />
         </Form.Item>
-        <Form.Item label="Appointment Date" name="appointmentDate" rules={[{ required: true, message: "Please select an appointment date!" }]}>
+        <Form.Item label="Appointment Date" name="newDate" rules={[{ required: true, message: "Please select an appointment date!" }]}>
           <DatePicker />
         </Form.Item>
-        <Form.Item label="Appointment Time" name="appointmentTime" rules={[{ required: true, message: "Please select an appointment time!" }]}>
+        <Form.Item label="Appointment Time" name="newTime" rules={[{ required: true, message: "Please select an appointment time!" }]}>
           <TimePicker />
         </Form.Item>
         <Form.Item label="Reason" name="reason" rules={[{ required: true, message: "Please input the reason!" }]}>

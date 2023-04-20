@@ -14,7 +14,7 @@ export const useSyncDatabases = () => {
     };
 
     window.addEventListener('online', handleOnline);
-
+    
     // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener('online', handleOnline);

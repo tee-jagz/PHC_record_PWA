@@ -21,6 +21,7 @@ const PatientForm = () => {
 
   return (
     <div>
+      <h1>Register Patient</h1>
       <Form layout="vertical" form={form} onFinish={handleSubmit}>
         <Form.Item label="First Name" name="firstName" rules={[{ required: true, message: 'Please input the first name!' }]}>
           <Input placeholder="First Name" />

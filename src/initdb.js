@@ -16,6 +16,7 @@ async function addInitialData(db) {
       genotype: 'AA',
       nextOfKin: 'Jane Doe',
       facilityID: 1,
+      synced: false,
     },
     // Add more sample patients here
 
@@ -34,6 +35,7 @@ async function addInitialData(db) {
       genotype: 'AA',
       nextOfKin: 'Jane Doe',
       facilityID: 1,
+      synced: false,
     },
   ];
 
@@ -51,6 +53,7 @@ async function addInitialData(db) {
       dateofDiagnosis: null,
       dateofRecovery: null,
       visitNotes: '',
+      synced: false,
     },
     // Add more sample visits here
     {
@@ -66,6 +69,7 @@ async function addInitialData(db) {
       dateofDiagnosis: null,
       dateofRecovery: null,
       visitNotes: '',
+      synced: false,
     },
   ];
 
@@ -76,6 +80,7 @@ async function addInitialData(db) {
       description: 'A viral infection affecting the nose and throat',
       severity: 'mild',
       treatment: 'Rest, fluids, over-the-counter medications',
+      synced: false,
     },
     // Add more sample medical conditions here
   ];
@@ -91,6 +96,7 @@ async function addInitialData(db) {
       email: 'j1ohn.doe@example.com',
       role: 'receptionist',
       facilityID: 1,
+      synced: false,
     },
     // Add more sample staff members here
     {
@@ -103,6 +109,7 @@ async function addInitialData(db) {
       email: 'joh2n.doe@example.com',
       role: 'doctor',
       facilityID: 1,
+      synced: false,
     },
   ];
 
@@ -114,6 +121,7 @@ async function addInitialData(db) {
       LGA: 'Los Angeles',
       Street: '123 Main St',
       Email: 'mainclinic@example.com',
+      synced: false,
     },
     // Add more sample facilities here
   ];

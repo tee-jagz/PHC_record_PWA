@@ -1,11 +1,11 @@
 import React from 'react';
 import {AppRoutes} from './Routes';
-//import { useSyncDatabases } from './useSyncDatabases';
+import { useSyncDatabases } from './useSyncDatabases';
 
 
 
 function App() {
-  //useSyncDatabases();
+  useSyncDatabases();
   return (
     <div style={{paddingRight: '1rem', paddingLeft: '1rem'}}>
     <AppRoutes />

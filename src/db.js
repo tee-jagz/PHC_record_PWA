@@ -1,4 +1,3 @@
-import { openDB } from 'idb';
 import { addInitialData } from './initdb';
 // Create a database connection and return it as a promise  (async) 
 
