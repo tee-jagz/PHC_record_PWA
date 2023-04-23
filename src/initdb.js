@@ -1,149 +1,27 @@
+// db.js
+import openIndexedDB from './db';
+import axios from 'axios';
 
+/// Modify the addInitialData function
 async function addInitialData(db) {
-  const samplePatients = [
-    {
-      patientId: 1,
-      firstName: 'John',
-      lastName: 'Doe',
-      gender: 'male',
-      dob: '1990-01-01',
-      address: '123 Main St',
-      phoneNo: '555-123-4567',
-      email: 'john.doe@example.com',
-      maritalStatus: 'single',
-      occupation: 'software engineer',
-      bloodGroup: 'O+',
-      genotype: 'AA',
-      nextOfKin: 'Jane Doe',
-      facilityID: 1,
-      synced: false,
-    },
-    // Add more sample patients here
+  console.log("addInitialData called");
+  try {
+    const response = await axios.get("http://localhost:5000/api/initial-data");
+    console.log("Initial data fetched");
+    const data = response.data;
 
-    {
-      patientId: 2,
-      firstName: 'Janet',
-      lastName: 'Doet',
-      gender: 'female',
-      dob: '1990-01-01',
-      address: '123 Main St',
-      phoneNo: '555-123-4567',
-      email: 'john.doe@exple.com',
-      maritalStatus: 'single',
-      occupation: 'software engineer',
-      bloodGroup: 'O+',
-      genotype: 'AA',
-      nextOfKin: 'Jane Doe',
-      facilityID: 1,
-      synced: false,
-    },
-  ];
+    for (const [objectStoreName, records] of Object.entries(data)) {
+      const transaction = db.transaction([objectStoreName], "readwrite");
+      const objectStore = transaction.objectStore(objectStoreName);
 
-  const sampleVisits = [
-    {
-      visitId: 1,
-      patientId: 1,
-      doctorId: 1,
-      facilityId: 1,
-      appointmentDate: '2023-04-20',
-      appointmentTime: '14:00',
-      reason: 'General checkup',
-      status: 'Active',
-      conditionId: null,
-      dateofDiagnosis: null,
-      dateofRecovery: null,
-      visitNotes: '',
-      synced: false,
-    },
-    // Add more sample visits here
-    {
-      visitId: 2,
-      patientId: 2,
-      doctorId: 1,
-      facilityId: 1,
-      appointmentDate: '2023-04-20',
-      appointmentTime: '14:00',
-      reason: 'General checkup',
-      status: 'Active',
-      conditionId: null,
-      dateofDiagnosis: null,
-      dateofRecovery: null,
-      visitNotes: '',
-      synced: false,
-    },
-  ];
-
-  const sampleMedicalConditions = [
-    {
-      conditionId: 1,
-      name: 'Common cold',
-      description: 'A viral infection affecting the nose and throat',
-      severity: 'mild',
-      treatment: 'Rest, fluids, over-the-counter medications',
-      synced: false,
-    },
-    // Add more sample medical conditions here
-  ];
-
-  const sampleStaff = [
-    {
-      staffId: 1,
-      username: 'admin',
-      password: 'admin',
-      firstName: 'John',
-      lastName: 'Doe',
-      gender: 'male',
-      email: 'j1ohn.doe@example.com',
-      role: 'receptionist',
-      facilityID: 1,
-      synced: false,
-    },
-    // Add more sample staff members here
-    {
-      staffId: 2,
-      username: 'doctor',
-      password: 'doctor',
-      firstName: 'Tee',
-      lastName: 'Jay',
-      gender: 'male',
-      email: 'joh2n.doe@example.com',
-      role: 'doctor',
-      facilityID: 1,
-      synced: false,
-    },
-  ];
-
-  const sampleFacilities = [
-    {
-      facilityId: 1,
-      Name: 'Main Clinic',
-      State: 'California',
-      LGA: 'Los Angeles',
-      Street: '123 Main St',
-      Email: 'mainclinic@example.com',
-      synced: false,
-    },
-    // Add more sample facilities here
-  ];
-
-  const transaction = db.transaction(['patients', 'visits', 'medicalConditions', 'staff', 'facilityStore'], 'readwrite');
-
-  const patientStore = transaction.objectStore('patients');
-  samplePatients.forEach((patient) => patientStore.add(patient));
-
-  const visitStore = transaction.objectStore('visits');
-  sampleVisits.forEach((visit) => visitStore.add(visit));
-
-  const medicalConditionStore = transaction.objectStore('medicalConditions');
-  sampleMedicalConditions.forEach((condition) => medicalConditionStore.add(condition));
-
-  const staffStore = transaction.objectStore('staff');
-  sampleStaff.forEach((staff) => staffStore.add(staff));
-
-  const facilityStore = transaction.objectStore('facilityStore');
-  sampleFacilities.forEach((facility) => facilityStore.add(facility));
-
-  await transaction.done;
+      for (const record of records) {
+        objectStore.add(record);
+      }
+    }
+  } catch (error) {
+    console.error("Error adding initial data:", error);
+  }
 }
 
-export { addInitialData };
+
+export {addInitialData};

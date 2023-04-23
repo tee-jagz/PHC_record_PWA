@@ -4,6 +4,7 @@ import json
 import os
 from dotenv import load_dotenv
 from flask_cors import CORS
+import datetime
 
 load_dotenv()
 
@@ -13,6 +14,15 @@ CORS(app)
 # Replace the placeholders with your actual Azure SQL database details
 conn_str = os.getenv('SQL_CONN_STR')
 conn = pyodbc.connect(conn_str)
+
+# Create a custom JSON encoder to handle the time object
+
+
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, (datetime.time, datetime.date)):
+            return obj.isoformat()
+        return super(CustomJSONEncoder, self).default(obj)
 
 
 @app.route('/api/patients/sync', methods=['POST'])
@@ -156,6 +166,23 @@ def sync_medical_conditions():
         conn.commit()
 
     return jsonify({'message': 'Successfully synced medical conditions'}), 200
+
+
+# Add the new get_initial_data API endpoint
+@app.route('/api/initial-data', methods=['GET'])
+def get_initial_data():
+    cursor = conn.cursor()
+
+    # Fetch data from all tables
+    tables = ['patients', 'visits', 'medicalConditions', 'staff', 'facility']
+    data = {}
+    for table in tables:
+        cursor.execute(f"SELECT * FROM {table}")
+        rows = cursor.fetchall()
+        columns = [column[0] for column in cursor.description]
+        data[table] = [dict(zip(columns, row)) for row in rows]
+
+    return json.dumps(data, cls=CustomJSONEncoder)
 
 
 if __name__ == '__main__':

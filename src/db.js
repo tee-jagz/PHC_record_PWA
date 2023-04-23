@@ -69,7 +69,7 @@ function openIndexedDB() {
       staffStore.createIndex("synced", "synced", { unique: false });
 
       // Create the Facility table
-      const facilityStore = db.createObjectStore('facilityStore', { keyPath: 'facilityId' });
+      const facilityStore = db.createObjectStore('facility', { keyPath: 'facilityId' });
       facilityStore.createIndex('Name', 'Name');
       facilityStore.createIndex('State', 'State');
       facilityStore.createIndex('LGA', 'LGA');
@@ -79,24 +79,25 @@ function openIndexedDB() {
     };
 
     request.onsuccess = async (event) => {
+      console.log("IndexedDB opened successfully.");
       const db = event.target.result;
-
+    
       const patientStore = db.transaction("patients", "readonly").objectStore("patients");
       const patientCountRequest = patientStore.count();
-
+    
       patientCountRequest.onsuccess = async () => {
-        // If there is no data in the patients object store, add the sample data
+        console.log("Patients count:", patientCountRequest.result);
         if (patientCountRequest.result === 0) {
-          await addInitialData(db);
-      }
-      resolve(db);
-    }
-
-    patientCountRequest.onerror = () => {
-      reject("Error counting patients in the database");
+          console.log("Adding initial data...");
+          await addInitialData(db); // Pass the 'db' instance
+        }
+        resolve(db);
+      };
+    
+      patientCountRequest.onerror = () => {
+        reject("Error counting patients in the database");
+      };
     };
-    };
-
     request.onerror = (event) => {
       reject(`IndexedDB error: ${event.target.error}`);
     };

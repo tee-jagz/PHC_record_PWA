@@ -16,7 +16,7 @@ const apiURL = 'http://localhost:5000';
       await syncTable(db, 'visits', `${apiURL}/api/visits`);
       await syncTable(db, 'medicalConditions', `${apiURL}/api/medicalConditions`);
       await syncTable(db, 'staff', `${apiURL}/api/staff`);
-      await syncTable(db, 'facilityStore', `${apiURL}/api/facilities`);
+      await syncTable(db, 'facility', `${apiURL}/api/facilities`);
     }
   } catch (error) {
     console.error('Error during synchronization:', error);
