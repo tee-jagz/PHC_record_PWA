@@ -4,7 +4,10 @@ import openIndexedDB from './db';
 
 async function syncDatabases() {
   console.log('Syncing databases...');
-  const apiURL = 'http://localhost:3000';
+  // src/syncService.js
+
+const apiURL = 'http://localhost:5000';
+
   try {
     const db = await openIndexedDB();
 
