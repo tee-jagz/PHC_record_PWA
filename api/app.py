@@ -9,16 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace the placeholders with your actual Azure SQL database details
-conn_str = (
-    "Driver={ODBC Driver 17 for SQL Server};"
-    "Server=med-pwa-project.database.windows.net;"
-    "Database=med_app_db;"
-    "Uid=medapp;"
-    "Pwd=MED@ppPW1!;"
-    "Encrypt=yes;"
-    "TrustServerCertificate=no;"
-    "Connection Timeout=30;"
-)
+conn_str = os.environ.get('SQL_CONN_STR')
 conn = pyodbc.connect(conn_str)
 
 
