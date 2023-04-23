@@ -2,14 +2,16 @@ from flask import Flask, request, jsonify
 import pyodbc
 import json
 import os
+from dotenv import load_dotenv
 from flask_cors import CORS
 
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
 
 # Replace the placeholders with your actual Azure SQL database details
-conn_str = os.environ.get('SQL_CONN_STR')
+conn_str = os.getenv('SQL_CONN_STR')
 conn = pyodbc.connect(conn_str)
 
 
