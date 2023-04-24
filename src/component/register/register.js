@@ -17,7 +17,7 @@ function RegisterPage({ db }) {
   async function handleRegister(values) {
     setLoading(true);
 
-    const { username, firstName, lastName, email, password, role } = values;
+    const { username, firstName, lastName, email, password, role, facilityID, gender } = values;
 
     const db = await openIndexedDB();
     const transaction = db.transaction(["staff"], "readwrite");
@@ -30,6 +30,8 @@ function RegisterPage({ db }) {
       email,
       password,
       role,
+      facilityID,
+      gender,
       synced: false,
     };
 
@@ -104,9 +106,29 @@ function RegisterPage({ db }) {
         >
           <Select placeholder="Role">
             <Option value="doctor">Doctor</Option>
-            <Option value="receptionist">Receptionist</Option>
+            <Option value="admin">Admin</Option>
           </Select>
         </Form.Item>
+        <Form.Item
+          label = "Gender"
+          name="gender"
+          rules={[{
+            required: true, message: "Please select your gender!"}]}
+          >
+            <Select placeholder="Gender">
+              <Option value="male">Male</Option>
+              <Option value="female">Female</Option>
+            </Select>
+        </Form.Item>
+        <Form.Item
+        label="Facility ID"
+        name="facilityID"
+        rules={[{
+          required: true,
+          message: "Please enter your facility ID!"}]}
+          >
+            <Input placeholder="Facility ID" />
+          </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" loading={loading}>
             Register

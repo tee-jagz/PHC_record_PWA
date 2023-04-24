@@ -5,12 +5,12 @@ import ProtectedRoute from "./component/ProtectedRoute";
 
 import RegisterPage from './component/register/register';
 import LoginPage from './component/login/login';  
-import PatientForm from './component/receptionist/patientreg';
-import AppointmentPage from './component/receptionist/appointment';
+import PatientForm from './component/admin/patientreg';
+import AppointmentPage from './component/admin/appointment';
 import DoctorDashboard from './component/doctor/doctor_dashboard';
 import ActiveVisits from "./component/doctor/ActiveVisits";
-import PatientList from "./component/receptionist/patientList";
-import PatientDetails from "./component/receptionist/patientDetails";
+import PatientList from "./component/admin/patientList";
+import PatientDetails from "./component/admin/patientDetails";
 
 
 export function AppRoutes() {
@@ -18,11 +18,38 @@ export function AppRoutes() {
     <Routes>
       <Route path="/register" exact element={<RegisterPage />} />
       <Route path="/" exact element={<LoginPage />} />
-      <Route path="/patientreg" exact element={<PatientForm />} />
-      <Route path="/appointment" exact element={<AppointmentPage />} />
-      {/* <Route path="/active_visits" exact element={<ActiveVisits />} /> */}
-      <Route path="/patientList" exact element={<PatientList />} />
-      <Route path="/patient-details/:patientId" exact element={<PatientDetails />} />
+      
+
+      {/* Admin pages */}
+      <Route
+        path="/appointment" 
+        element={
+          <ProtectedRoute allowedRoles={['admin']}>
+            <AppointmentPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route 
+      path="/patientreg" 
+       element={
+       <ProtectedRoute allowedRoles={['admin']}>
+       <PatientForm />
+       </ProtectedRoute>
+       } />
+       <Route 
+       path="/patientList" 
+        element={
+        <ProtectedRoute allowedRoles={['admin']}>
+        <PatientList />
+        </ProtectedRoute>
+        } />
+      <Route 
+      path="/patient-details/:patientId" 
+       element={
+       <ProtectedRoute allowedRoles={['admin']}>
+       <PatientDetails />
+       </ProtectedRoute>
+       } />
 
       {/* Doctors pages */}
       <Route

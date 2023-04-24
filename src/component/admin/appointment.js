@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import openIndexedDB from "./../../db";
 import { Form, Input, Button, DatePicker, TimePicker, Select } from "antd";
+import { useAuth } from "./../../useAuth";
 
 const { Option } = Select;
 
 const AddAppointment = () => {
   const [form] = Form.useForm();
+  const { user } = useAuth();
 
   const handleSubmit = async (values) => {
     const { patientId, newDate, newTime, reason, status } = values;
@@ -15,7 +17,7 @@ const AddAppointment = () => {
     const visitsStore = tx.objectStore("visits");
 
     const appointmentDate = newDate.format("YYYY-MM-DD");
-    const appointmentTime = newTime.format("HH:mm");
+    const appointmentTime = newTime.format("HH:mm:ss");
 
     const newVisit = {
       patientId: parseInt(patientId),
@@ -23,6 +25,8 @@ const AddAppointment = () => {
       appointmentTime,
       reason,
       status,
+      facilityId: 1,
+      doctorId: 1,
       synced: false,
     };
 

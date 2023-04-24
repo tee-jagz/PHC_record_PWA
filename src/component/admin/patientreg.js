@@ -13,6 +13,8 @@ const PatientForm = () => {
     const store = tx.objectStore('patients');
 
     // Add the 'synced' property with a default value of false
+    values.dob = values.dob.format("YYYY-MM-DD");
+    console.log(values.dob)
     values.synced = false;
     await store.add(values);
     await tx.complete;

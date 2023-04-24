@@ -15,7 +15,7 @@ const LoginForm = () => {
       console.log("user", user);
       if (user.role === "doctor") {
         navigate("/active_visits", { replace: true });
-      } else if (user.role === "receptionist") {
+      } else if (user.role === "admin") {
         navigate("/appointment", { replace: true });
       }
     }

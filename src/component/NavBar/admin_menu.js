@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { CalendarOutlined, UserAddOutlined, UserOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
-function ReceptionMenu() {
+function AdminMenu() {
 
 
 
@@ -24,4 +24,4 @@ function ReceptionMenu() {
   );
 }
 
-export default ReceptionMenu;
+export default AdminMenu;

@@ -4,7 +4,7 @@ import { Layout, Menu, Button } from 'antd';
 import { HomeOutlined, LoginOutlined, UserAddOutlined, LogoutOutlined } from '@ant-design/icons';
 import { useAuth } from "./../../useAuth";
 import DoctorMenu from './DoctorMenu';
-import ReceptionMenu from './reception_menu';
+import AdminMenu from './admin_menu';
 
 
 const { Header } = Layout;
@@ -35,7 +35,7 @@ function Navbar() {
         </Header>
       </Layout>
     );
-  } else if (user.role === "receptionist")
+  } else if (user.role === "admin")
   {
   return (
     <div className="navbar">
@@ -49,7 +49,7 @@ function Navbar() {
 
       </Header>
     </Layout>
-    <ReceptionMenu />
+    <AdminMenu />
     </div>
   );
 } else if (user.role === "doctor") {
