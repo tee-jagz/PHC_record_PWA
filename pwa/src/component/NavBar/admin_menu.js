@@ -8,7 +8,7 @@ function AdminMenu() {
 
 
   return (
-    <div  style={{ display: "flex", justifyContent: "space-between" }}>
+    <div  style={{ display: "flex", justifyContent: "space-between", background: "rgb(242,242,242)", boxShadow: "0px 1px 3px rgb(242,242,242)"}}>
       <div>
         <Button  type="link" icon={<CalendarOutlined />}>
           <Link to="/appointment">Appointment</Link>

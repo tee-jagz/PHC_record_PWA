@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import openIndexedDB from "./../../db";
-import { Form, Input, Button, Select } from "antd";
+import { Form, Input, Button, Select, message } from "antd";
 import "./dash.css";
 
 const { Option } = Select;
@@ -67,6 +67,7 @@ function DoctorDashboard() {
 
     updatePatientData(updatedPatient);
     updateVisitData(updatedVisit);
+    message.success("Update successful");
   };
 
   if (!patient || !visit) {
@@ -92,13 +93,14 @@ function DoctorDashboard() {
           <h2>{patient.genotype}</h2>
           </div>
           <div class = "patientCard">
-          <h3>Patient Name</h3>
-          <h2>{patient.firstName} {patient.lastName}</h2>
-        </div>
-        <div class = "patientCard">
             <h3>Gender</h3>
             <h2>{patient.gender.charAt(0).toUpperCase() + patient.gender.slice(1)}</h2>
           </div>
+          <div class = "patientCard">
+          <h3>Patient Name</h3>
+          <h2>{patient.firstName} {patient.lastName}</h2>
+        </div>
+        
       </div>
       
       <Form layout="vertical" onFinish={handleUpdate} initialValues={{ ...patient, ...visit }}>

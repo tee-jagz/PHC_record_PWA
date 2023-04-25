@@ -86,9 +86,7 @@ function openIndexedDB() {
       const patientCountRequest = patientStore.count();
     
       patientCountRequest.onsuccess = async () => {
-        console.log("Patients count:", patientCountRequest.result);
         if (patientCountRequest.result === 0) {
-          console.log("Adding initial data...");
           await addInitialData(db); // Pass the 'db' instance
         }
         resolve(db);

@@ -4,10 +4,8 @@ import axios from 'axios';
 
 /// Modify the addInitialData function
 async function addInitialData(db) {
-  console.log("addInitialData called");
   try {
     const response = await axios.get("http://localhost:5000/api/initial-data");
-    console.log("Initial data fetched");
     const data = response.data;
 
     for (const [objectStoreName, records] of Object.entries(data)) {

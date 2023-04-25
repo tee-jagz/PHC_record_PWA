@@ -32,6 +32,7 @@ export function AuthProvider({ children }) {
         // Save the user to localStorage
         localStorage.setItem("user", JSON.stringify(staffMember));
       } else {
+        alert('Invalid credentials');
         throw new Error("Invalid credentials");
       }
     };
