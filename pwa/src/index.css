@@ -11,3 +11,17 @@ body{
     z-index: 100;
     /* Add other navbar styles if needed */
   }
+  input:hover{
+    box-shadow: 5px 2px 8px  #cadcdf;
+    transform: scale(1.005);
+    transition: all 0.3s ease-in-out;
+}
+h1{
+    color: rgb(2, 30, 55);
+}
+h2{
+    color: rgb(0, 59, 96);
+}
+h3{
+    color: rgb(2, 30, 55);
+}

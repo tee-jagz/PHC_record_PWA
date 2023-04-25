@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import openIndexedDB from "./../../db";
-import { Form, Input, Button } from "antd";
+import { Form, Input, Button, Select } from "antd";
+import "./dash.css";
+
+const { Option } = Select;
 
 function DoctorDashboard() {
   const { visitId } = useParams();
@@ -39,7 +42,7 @@ function DoctorDashboard() {
     const patientStore = transaction.objectStore("patients");
 
     const request = patientStore.put(patientData);
-
+    
     request.onerror = () => {
       console.error("Error updating patient data");
     };
@@ -73,25 +76,51 @@ function DoctorDashboard() {
   return (
     <div>
       <h1>Doctor Dashboard</h1>
+      <div id = "patientInfo">
+        
+        <div class = "patientCard">
+          <h3>Age</h3>
+          <h2>{new Date().getFullYear() - parseInt(patient.dob.slice(0,4))}</h2>
+          </div>
+          
+        <div class = "patientCard">
+          <h3>Blood Group</h3>
+          <h2>{patient.bloodGroup}</h2>
+          </div>
+        <div class = "patientCard">
+          <h3>Genotype</h3>
+          <h2>{patient.genotype}</h2>
+          </div>
+          <div class = "patientCard">
+          <h3>Patient Name</h3>
+          <h2>{patient.firstName} {patient.lastName}</h2>
+        </div>
+        <div class = "patientCard">
+            <h3>Gender</h3>
+            <h2>{patient.gender.charAt(0).toUpperCase() + patient.gender.slice(1)}</h2>
+          </div>
+      </div>
+      
       <Form layout="vertical" onFinish={handleUpdate} initialValues={{ ...patient, ...visit }}>
         {/* Render patient and visit form fields here */}
-        <h2>Patient Information</h2>
-      <Form.Item label="First Name" name="firstName">
+        <Form.Item label="Condition ID" name="conditionId">
+        <Input />
+      </Form.Item>  
+      
+      <Form.Item label="Reason" name="reason">
         <Input />
       </Form.Item>
-      <Form.Item label="Last Name" name="lastName">
-        <Input />
-      </Form.Item>
-      {/* ... other patient form fields */}
+      <Form.Item label="Visit Notes" name="visitNotes">
+          <Input.TextArea />
+        </Form.Item>
 
-      {/* Visit form fields */}
-      <h2>Visit Information</h2>
-      <Form.Item layout="vertical" label="Appointment Date" name="appointmentDate">
-        <Input />
-      </Form.Item>
-      <Form.Item label="Appointment Time" name="appointmentTime">
-        <Input />
-      </Form.Item>
+      <Form.Item label="Status" name="status" rules={[{ required: true, message: "Please select a status!" }]}>
+          <Select>
+            <Option value="Active">Active</Option>
+            <Option value="Inactive">Inactive</Option>
+            <Option value="Completed">Completed</Option>
+          </Select>
+        </Form.Item>
       {/* ... other visit form fields */}
 
         <Form.Item>

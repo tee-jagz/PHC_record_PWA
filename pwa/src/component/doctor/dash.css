@@ -1,0 +1,21 @@
+.patientCard{
+    width: 10rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 0px 4px  #cadcdf;
+    background-color: white;
+    text-align: center;
+    flex: 1 0 21%;
+    margin: 0.5rem;
+}
+.patientCard:hover{
+    box-shadow: 5px 2px 8px  #cadcdf;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    
+}
+#patientInfo{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem;
+}

@@ -40,7 +40,7 @@ const AddAppointment = () => {
   
   return (
     <div>
-      <h2>Add Appointment</h2>
+      <h1>Add Appointment</h1>
       <Form layout="vertical" form={form} onFinish={handleSubmit}>
         <Form.Item label="Patient ID" name="patientId" rules={[{ required: true, message: "Please input the patient ID!" }]}>
           <Input type="number" />

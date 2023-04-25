@@ -79,7 +79,7 @@ useEffect(() => {
  
   return (
     <div>
-      <h2>Active Visits</h2>
+      <h1>Active Visits</h1>
       <Table
         columns={columns}
         dataSource={data}
