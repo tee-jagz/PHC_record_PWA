@@ -11,10 +11,6 @@ function DoctorDashboard() {
   const [patient, setPatient] = useState(null);
   const [visit, setVisit] = useState(null);
 
-  useEffect(() => {
-    fetchVisitAndPatientData();
-  }, [visitId]);
-
   const fetchVisitAndPatientData = async () => {
     const db = await openIndexedDB();
     const transaction = db.transaction(["visits", "patients"], "readonly");
@@ -34,7 +30,11 @@ function DoctorDashboard() {
       };
     };
   };
-  
+
+  useEffect(() => {
+    fetchVisitAndPatientData();
+  }, [visitId]);
+
 
   const updatePatientData = async (patientData) => {
     const db = await openIndexedDB();
@@ -79,24 +79,24 @@ function DoctorDashboard() {
       <h1>Doctor Dashboard</h1>
       <div id = "patientInfo">
         
-        <div class = "patientCard">
+        <div className = "patientCard">
           <h3>Age</h3>
           <h2>{new Date().getFullYear() - parseInt(patient.dob.slice(0,4))}</h2>
           </div>
           
-        <div class = "patientCard">
+        <div className = "patientCard">
           <h3>Blood Group</h3>
           <h2>{patient.bloodGroup}</h2>
           </div>
-        <div class = "patientCard">
+        <div className = "patientCard">
           <h3>Genotype</h3>
           <h2>{patient.genotype}</h2>
           </div>
-          <div class = "patientCard">
+          <div className = "patientCard">
             <h3>Gender</h3>
             <h2>{patient.gender.charAt(0).toUpperCase() + patient.gender.slice(1)}</h2>
           </div>
-          <div class = "patientCard">
+          <div className = "patientCard">
           <h3>Patient Name</h3>
           <h2>{patient.firstName} {patient.lastName}</h2>
         </div>

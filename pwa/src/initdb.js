@@ -1,5 +1,3 @@
-// db.js
-import openIndexedDB from './db';
 import axios from 'axios';
 
 /// Modify the addInitialData function
