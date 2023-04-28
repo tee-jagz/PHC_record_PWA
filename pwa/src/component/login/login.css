@@ -1,0 +1,20 @@
+#loginContainer{
+    display: flex;
+    justify-content: center;
+    padding:  12% 0%;
+}
+#loginCard{
+    background-color: rgb(252, 252, 252);
+    width: 20rem;
+    padding: 4rem 3rem;
+    box-shadow: 5px 2px 8px  #cadcdf;
+    border-radius: 12px;
+    text-align: center;
+}
+label{
+    font-weight: 500;
+    align-self: auto;
+}
+h1{
+    margin-top: 0px;
+}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form, Input, Button, Typography } from "antd";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "./../../useAuth";
+import "./login.css";
 
 const { Title } = Typography;
 
@@ -22,6 +23,7 @@ const LoginForm = () => {
 
   const onFinish = async (values) => {
     try {
+      console.log(values);
       await login(values.username, values.password);
     } catch (err) {
       setError(err.message);
@@ -29,7 +31,8 @@ const LoginForm = () => {
   }; 
   
   return (
-    <div>
+    <div id="loginContainer">
+    <div id="loginCard">
       <Title>Login</Title>
       <Form layout="vertical" onFinish={onFinish}>
         <Form.Item
@@ -53,6 +56,7 @@ const LoginForm = () => {
         </Form.Item>
       </Form>
       {error && <p style={{ color: "red" }}>{error}</p>}
+    </div>
     </div>
   );
 };

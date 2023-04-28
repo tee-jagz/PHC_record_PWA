@@ -16,7 +16,35 @@ body{
     transform: scale(1.005);
     transition: all 0.3s ease-in-out;
 }
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    padding:  5% 0%;
+}
+.mainCard{
+    background-color: rgb(252, 252, 252);
+    width: 30rem;
+    padding: 4rem 3rem;
+    box-shadow: 5px 2px 8px  #cadcdf;
+    border-radius: 12px;
+    text-align: center;
+}
+.ant-form-item-control-input-content{
+    display: flex;
+    justify-content: start;
+}
+.ant-form-item-control-input-content:has(button){
+    justify-content: center;
+}
+.ant-select-selector{
+    text-align: start;
+}
+label{
+    font-weight: 500;
+    align-self: auto;
+}
 h1{
+    margin-top: 0px;
     color: rgb(2, 30, 55);
 }
 h2{

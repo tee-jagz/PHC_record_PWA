@@ -39,7 +39,8 @@ const AddAppointment = () => {
 
   
   return (
-    <div>
+    <div className="mainContainer">
+    <div className="mainCard">
       <h1>Add Appointment</h1>
       <Form layout="vertical" form={form} onFinish={handleSubmit}>
         <Form.Item label="Patient ID" name="patientId" rules={[{ required: true, message: "Please input the patient ID!" }]}>
@@ -66,6 +67,7 @@ const AddAppointment = () => {
           </Button>
         </Form.Item>
       </Form>
+    </div>
     </div>
   );
 };

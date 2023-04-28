@@ -19,3 +19,16 @@
     flex-flow: row wrap;
     margin-bottom: 2rem;
 }
+.dashContainer{
+    display: flex;
+    justify-content: center;
+}
+.dashCard{
+    background-color: rgb(252, 252, 252);
+    width: 85%;
+    margin-bottom: 2.5rem;
+    padding: 4rem 3rem;
+    box-shadow: 5px 2px 8px  #cadcdf5a;
+    border-radius: 12px;
+    text-align: center;
+}

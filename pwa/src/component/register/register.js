@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import openIndexedDB from "../../db";
 import { Form, Input, Button, Select, message } from "antd";
+import "./register.css";
 
 
 const { Option } = Select;
@@ -42,7 +43,8 @@ function RegisterPage({ db }) {
   }
 
   return (
-    <>
+    <div id="registerContainer">
+    <div id="registerCard">
       <h1>Register</h1>
       <Form
         layout="vertical"
@@ -135,7 +137,8 @@ function RegisterPage({ db }) {
           </Button>
         </Form.Item>
       </Form>
-    </>
+    </div>
+    </div>
   );
 }
 

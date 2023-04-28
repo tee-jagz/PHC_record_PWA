@@ -49,8 +49,8 @@ function PatientDetails() {
 
   if (!patient) return <div>Loading...</div>;
 
-  return (
-    <div>
+  return (<div className="mainContainer">
+  <div className="mainCard">
       <h1>Patient Details</h1>
       <Form layout="vertical" onFinish={handleUpdate} initialValues={patient}>
         {/* Patient form fields */}
@@ -109,6 +109,7 @@ function PatientDetails() {
           </Button>
         </Form.Item>
       </Form>
+    </div>
     </div>
   );
 }

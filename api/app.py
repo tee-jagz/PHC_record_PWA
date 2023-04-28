@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace the placeholders with your actual Azure SQL database details
-conn_str = os.getenv('SQL_CONN_STR')
+conn_str = os.environ['SQL_CONN_STR']
 conn = pyodbc.connect(conn_str)
 
 # Create a custom JSON encoder to handle the time object

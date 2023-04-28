@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  logs:
+    container_name: api-logs
+    image: amir20/dozzle:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8081:8080
+  api:
+    build:
+      context: ./api
+    env_file:
+      - ./api/.env
+    ports:
+      - 5000:5000
+  pwa:
+    build:
+      context: ./pwa
+      args:
+        port: 3000
+    env_file:
+      - ./pwa/.env
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:80
+    
