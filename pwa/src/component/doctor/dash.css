@@ -1,12 +1,11 @@
 .patientCard{
-    width: 10rem;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
     box-shadow: 2px 0px 4px  #cadcdf5e;
     background-color: white;
     text-align: center;
-    flex: 1 0 21%;
-    margin: 0.5rem;
+    flex: 1 0 10rem;
+    margin: 0.25rem;
 }
 .patientCard:hover{
     box-shadow: 5px 2px 8px  #cadcdf;
@@ -14,10 +13,17 @@
     transition: all 0.3s ease-in-out;
     
 }
+#patientContainer{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
 #patientInfo{
+    width: 56.5rem;
+    padding: 0%;
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .dashContainer{
     display: flex;
@@ -25,10 +31,10 @@
 }
 .dashCard{
     background-color: rgb(252, 252, 252);
-    width: 85%;
+    width: 50rem;
     margin-bottom: 2.5rem;
     padding: 4rem 3rem;
-    box-shadow: 5px 2px 8px  #cadcdf5a;
+    box-shadow: 5px 2px 8px  #cadcdf18;
     border-radius: 12px;
     text-align: center;
 }

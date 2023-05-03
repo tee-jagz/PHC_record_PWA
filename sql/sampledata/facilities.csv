@@ -1,0 +1,770 @@
+facilityId,Name,Street,LGA,State,Email
+1,AbiAba,,Aba North,Abia,AbiAba@phcsample.com
+2,AbiAba,,Aba South,Abia,AbiAba@phcsample.com
+3,AbiAro,,Arochukwu,Abia,AbiAro@phcsample.com
+4,AbiBen,,Bende,Abia,AbiBen@phcsample.com
+5,AbiIkw,,Ikwuano,Abia,AbiIkw@phcsample.com
+6,AbiIsi,,Isiala-Ngwa North,Abia,AbiIsi@phcsample.com
+7,AbiIsi,,Isiala-Ngwa South,Abia,AbiIsi@phcsample.com
+8,AbiIsu,,Isuikwato,Abia,AbiIsu@phcsample.com
+9,AbiObi,,Obi Nwa,Abia,AbiObi@phcsample.com
+10,AbiOha,,Ohafia,Abia,AbiOha@phcsample.com
+11,AbiOsi,,Osisioma,Abia,AbiOsi@phcsample.com
+12,AbiNgw,,Ngwa,Abia,AbiNgw@phcsample.com
+13,AbiUgw,,Ugwunagbo,Abia,AbiUgw@phcsample.com
+14,AbiUkw,,Ukwa East,Abia,AbiUkw@phcsample.com
+15,AbiUkw,,Ukwa West,Abia,AbiUkw@phcsample.com
+16,AbiUmu,,Umuahia North,Abia,AbiUmu@phcsample.com
+17,AbiUmu,,Umuahia South,Abia,AbiUmu@phcsample.com
+18,AbiUmu,,Umu-Neochi,Abia,AbiUmu@phcsample.com
+19,AdaDem,,Demsa,Adamawa,AdaDem@phcsample.com
+20,AdaFuf,,Fufore,Adamawa,AdaFuf@phcsample.com
+21,AdaGan,,Ganaye,Adamawa,AdaGan@phcsample.com
+22,AdaGir,,Gireri,Adamawa,AdaGir@phcsample.com
+23,AdaGom,,Gombi,Adamawa,AdaGom@phcsample.com
+24,AdaGuy,,Guyuk,Adamawa,AdaGuy@phcsample.com
+25,AdaHon,,Hong,Adamawa,AdaHon@phcsample.com
+26,AdaJad,,Jada,Adamawa,AdaJad@phcsample.com
+27,AdaLam,,Lamurde,Adamawa,AdaLam@phcsample.com
+28,AdaMad,,Madagali,Adamawa,AdaMad@phcsample.com
+29,AdaMai,,Maiha,Adamawa,AdaMai@phcsample.com
+30,AdaMay,,Mayo-Belwa,Adamawa,AdaMay@phcsample.com
+31,AdaMic,,Michika,Adamawa,AdaMic@phcsample.com
+32,AdaMub,,Mubi North,Adamawa,AdaMub@phcsample.com
+33,AdaMub,,Mubi South,Adamawa,AdaMub@phcsample.com
+34,AdaNum,,Numan,Adamawa,AdaNum@phcsample.com
+35,AdaShe,,Shelleng,Adamawa,AdaShe@phcsample.com
+36,AdaSon,,Song,Adamawa,AdaSon@phcsample.com
+37,AdaTou,,Toungo,Adamawa,AdaTou@phcsample.com
+38,AdaYol,,Yola North,Adamawa,AdaYol@phcsample.com
+39,AdaYol,,Yola South,Adamawa,AdaYol@phcsample.com
+40,AnaAgu,,Aguata,Anambra,AnaAgu@phcsample.com
+41,AnaAna,,Anambra East,Anambra,AnaAna@phcsample.com
+42,AnaAna,,Anambra West,Anambra,AnaAna@phcsample.com
+43,AnaAna,,Anaocha,Anambra,AnaAna@phcsample.com
+44,AnaAwk,,Awka North,Anambra,AnaAwk@phcsample.com
+45,AnaAwk,,Awka South,Anambra,AnaAwk@phcsample.com
+46,AnaAya,,Ayamelum,Anambra,AnaAya@phcsample.com
+47,AnaDun,,Dunukofia,Anambra,AnaDun@phcsample.com
+48,AnaEkw,,Ekwusigo,Anambra,AnaEkw@phcsample.com
+49,AnaIde,,Idemili North,Anambra,AnaIde@phcsample.com
+50,AnaIde,,Idemili south,Anambra,AnaIde@phcsample.com
+51,AnaIhi,,Ihiala,Anambra,AnaIhi@phcsample.com
+52,AnaNji,,Njikoka,Anambra,AnaNji@phcsample.com
+53,AnaNne,,Nnewi North,Anambra,AnaNne@phcsample.com
+54,AnaNne,,Nnewi South,Anambra,AnaNne@phcsample.com
+55,AnaOgb,,Ogbaru,Anambra,AnaOgb@phcsample.com
+56,AnaOni,,Onitsha North,Anambra,AnaOni@phcsample.com
+57,AnaOni,,Onitsha South,Anambra,AnaOni@phcsample.com
+58,AnaOru,,Orumba North,Anambra,AnaOru@phcsample.com
+59,AnaOru,,Orumba South,Anambra,AnaOru@phcsample.com
+60,AnaOyi,,Oyi,Anambra,AnaOyi@phcsample.com
+61,AkwAba,,Abak,Akwa Ibom,AkwAba@phcsample.com
+62,AkwEas,,Eastern Obolo,Akwa Ibom,AkwEas@phcsample.com
+63,AkwEke,,Eket,Akwa Ibom,AkwEke@phcsample.com
+64,AkwEsi,,Esit Eket,Akwa Ibom,AkwEsi@phcsample.com
+65,AkwEss,,Essien Udim,Akwa Ibom,AkwEss@phcsample.com
+66,AkwEti,,Etim Ekpo,Akwa Ibom,AkwEti@phcsample.com
+67,AkwEti,,Etinan,Akwa Ibom,AkwEti@phcsample.com
+68,AkwIbe,,Ibeno,Akwa Ibom,AkwIbe@phcsample.com
+69,AkwIbe,,Ibesikpo Asutan,Akwa Ibom,AkwIbe@phcsample.com
+70,AkwIbi,,Ibiono Ibom,Akwa Ibom,AkwIbi@phcsample.com
+71,AkwIka,,Ika,Akwa Ibom,AkwIka@phcsample.com
+72,AkwIko,,Ikono,Akwa Ibom,AkwIko@phcsample.com
+73,AkwIko,,Ikot Abasi,Akwa Ibom,AkwIko@phcsample.com
+74,AkwIko,,Ikot Ekpene,Akwa Ibom,AkwIko@phcsample.com
+75,AkwIni,,Ini,Akwa Ibom,AkwIni@phcsample.com
+76,AkwItu,,Itu,Akwa Ibom,AkwItu@phcsample.com
+77,AkwMbo,,Mbo,Akwa Ibom,AkwMbo@phcsample.com
+78,AkwMkp,,Mkpat Enin,Akwa Ibom,AkwMkp@phcsample.com
+79,AkwNsi,,Nsit Atai,Akwa Ibom,AkwNsi@phcsample.com
+80,AkwNsi,,Nsit Ibom,Akwa Ibom,AkwNsi@phcsample.com
+81,AkwNsi,,Nsit Ubium,Akwa Ibom,AkwNsi@phcsample.com
+82,AkwObo,,Obot Akara,Akwa Ibom,AkwObo@phcsample.com
+83,AkwOko,,Okobo,Akwa Ibom,AkwOko@phcsample.com
+84,AkwOnn,,Onna,Akwa Ibom,AkwOnn@phcsample.com
+85,AkwOro,,Oron,Akwa Ibom,AkwOro@phcsample.com
+86,AkwOru,,Oruk Anam,Akwa Ibom,AkwOru@phcsample.com
+87,AkwUdu,,Udung Uko,Akwa Ibom,AkwUdu@phcsample.com
+88,AkwUka,,Ukanafun,Akwa Ibom,AkwUka@phcsample.com
+89,AkwUru,,Uruan,Akwa Ibom,AkwUru@phcsample.com
+90,AkwUru,,Urue-Offong/Oruko ,Akwa Ibom,AkwUru@phcsample.com
+91,AkwUyo,,Uyo,Akwa Ibom,AkwUyo@phcsample.com
+92,BauAlk,,Alkaleri,Bauchi,BauAlk@phcsample.com
+93,BauBau,,Bauchi,Bauchi,BauBau@phcsample.com
+94,BauBog,,Bogoro,Bauchi,BauBog@phcsample.com
+95,BauDam,,Damban,Bauchi,BauDam@phcsample.com
+96,BauDar,,Darazo,Bauchi,BauDar@phcsample.com
+97,BauDas,,Dass,Bauchi,BauDas@phcsample.com
+98,BauGan,,Ganjuwa,Bauchi,BauGan@phcsample.com
+99,BauGia,,Giade,Bauchi,BauGia@phcsample.com
+100,BauIta,,Itas/Gadau,Bauchi,BauIta@phcsample.com
+101,BauJam,,Jama'are,Bauchi,BauJam@phcsample.com
+102,BauKat,,Katagum,Bauchi,BauKat@phcsample.com
+103,BauKir,,Kirfi,Bauchi,BauKir@phcsample.com
+104,BauMis,,Misau,Bauchi,BauMis@phcsample.com
+105,BauNin,,Ningi,Bauchi,BauNin@phcsample.com
+106,BauShi,,Shira,Bauchi,BauShi@phcsample.com
+107,BauTaf,,Tafawa-Balewa,Bauchi,BauTaf@phcsample.com
+108,BauTor,,Toro,Bauchi,BauTor@phcsample.com
+109,BauWar,,Warji,Bauchi,BauWar@phcsample.com
+110,BauZak,,Zaki,Bauchi,BauZak@phcsample.com
+111,BayBra,,Brass,Bayelsa,BayBra@phcsample.com
+112,BayEke,,Ekeremor,Bayelsa,BayEke@phcsample.com
+113,BayKol,,Kolokuma/Opokuma,Bayelsa,BayKol@phcsample.com
+114,BayNem,,Nembe,Bayelsa,BayNem@phcsample.com
+115,BayOgb,,Ogbia,Bayelsa,BayOgb@phcsample.com
+116,BaySag,,Sagbama,Bayelsa,BaySag@phcsample.com
+117,BaySou,,Southern Jaw,Bayelsa,BaySou@phcsample.com
+118,BayYen,,Yenegoa,Bayelsa,BayYen@phcsample.com
+119,BenAdo,,Ado,Benue,BenAdo@phcsample.com
+120,BenAga,,Agatu,Benue,BenAga@phcsample.com
+121,BenApa,,Apa,Benue,BenApa@phcsample.com
+122,BenBur,,Buruku,Benue,BenBur@phcsample.com
+123,BenGbo,,Gboko,Benue,BenGbo@phcsample.com
+124,BenGum,,Guma,Benue,BenGum@phcsample.com
+125,BenGwe,,Gwer East,Benue,BenGwe@phcsample.com
+126,BenGwe,,Gwer West,Benue,BenGwe@phcsample.com
+127,BenKat,,Katsina-Ala,Benue,BenKat@phcsample.com
+128,BenKon,,Konshisha,Benue,BenKon@phcsample.com
+129,BenKwa,,Kwande,Benue,BenKwa@phcsample.com
+130,BenLog,,Logo,Benue,BenLog@phcsample.com
+131,BenMak,,Makurdi,Benue,BenMak@phcsample.com
+132,BenObi,,Obi,Benue,BenObi@phcsample.com
+133,BenOgb,,Ogbadibo,Benue,BenOgb@phcsample.com
+134,BenOju,,Oju,Benue,BenOju@phcsample.com
+135,BenOkp,,Okpokwu,Benue,BenOkp@phcsample.com
+136,BenOhi,,Ohimini,Benue,BenOhi@phcsample.com
+137,BenOtu,,Oturkpo,Benue,BenOtu@phcsample.com
+138,BenTar,,Tarka,Benue,BenTar@phcsample.com
+139,BenUku,,Ukum,Benue,BenUku@phcsample.com
+140,BenUsh,,Ushongo,Benue,BenUsh@phcsample.com
+141,BenVan,,Vandeikya,Benue,BenVan@phcsample.com
+142,BorAba,,Abadam,Borno,BorAba@phcsample.com
+143,BorAsk,,Askira/Uba,Borno,BorAsk@phcsample.com
+144,BorBam,,Bama,Borno,BorBam@phcsample.com
+145,BorBay,,Bayo,Borno,BorBay@phcsample.com
+146,BorBiu,,Biu,Borno,BorBiu@phcsample.com
+147,BorChi,,Chibok,Borno,BorChi@phcsample.com
+148,BorDam,,Damboa,Borno,BorDam@phcsample.com
+149,BorDik,,Dikwa,Borno,BorDik@phcsample.com
+150,BorGub,,Gubio,Borno,BorGub@phcsample.com
+151,BorGuz,,Guzamala,Borno,BorGuz@phcsample.com
+152,BorGwo,,Gwoza,Borno,BorGwo@phcsample.com
+153,BorHaw,,Hawul,Borno,BorHaw@phcsample.com
+154,BorJer,,Jere,Borno,BorJer@phcsample.com
+155,BorKag,,Kaga,Borno,BorKag@phcsample.com
+156,BorKal,,Kala/Balge,Borno,BorKal@phcsample.com
+157,BorKon,,Konduga,Borno,BorKon@phcsample.com
+158,BorKuk,,Kukawa,Borno,BorKuk@phcsample.com
+159,BorKwa,,Kwaya Kusar,Borno,BorKwa@phcsample.com
+160,BorMaf,,Mafa,Borno,BorMaf@phcsample.com
+161,BorMag,,Magumeri,Borno,BorMag@phcsample.com
+162,BorMai,,Maiduguri,Borno,BorMai@phcsample.com
+163,BorMar,,Marte,Borno,BorMar@phcsample.com
+164,BorMob,,Mobbar,Borno,BorMob@phcsample.com
+165,BorMon,,Monguno,Borno,BorMon@phcsample.com
+166,BorNga,,Ngala,Borno,BorNga@phcsample.com
+167,BorNga,,Nganzai,Borno,BorNga@phcsample.com
+168,BorSha,,Shani,Borno,BorSha@phcsample.com
+169,CroAkp,,Akpabuyo,Cross River,CroAkp@phcsample.com
+170,CroOdu,,Odukpani,Cross River,CroOdu@phcsample.com
+171,CroAka,,Akamkpa,Cross River,CroAka@phcsample.com
+172,CroBia,,Biase,Cross River,CroBia@phcsample.com
+173,CroAbi,,Abi,Cross River,CroAbi@phcsample.com
+174,CroIko,,Ikom,Cross River,CroIko@phcsample.com
+175,CroYar,,Yarkur,Cross River,CroYar@phcsample.com
+176,CroOdu,,Odubra,Cross River,CroOdu@phcsample.com
+177,CroBok,,Boki,Cross River,CroBok@phcsample.com
+178,CroOgo,,Ogoja,Cross River,CroOgo@phcsample.com
+179,CroYal,,Yala,Cross River,CroYal@phcsample.com
+180,CroOba,,Obanliku,Cross River,CroOba@phcsample.com
+181,CroObu,,Obudu,Cross River,CroObu@phcsample.com
+182,CroCal,,Calabar South,Cross River,CroCal@phcsample.com
+183,CroEtu,,Etung,Cross River,CroEtu@phcsample.com
+184,CroBek,,Bekwara,Cross River,CroBek@phcsample.com
+185,CroBak,,Bakassi,Cross River,CroBak@phcsample.com
+186,CroCal,,Calabar Municipality,Cross River,CroCal@phcsample.com
+187,DelOsh,,Oshimili,Delta,DelOsh@phcsample.com
+188,DelAni,,Aniocha,Delta,DelAni@phcsample.com
+189,DelAni,,Aniocha South,Delta,DelAni@phcsample.com
+190,DelIka,,Ika South,Delta,DelIka@phcsample.com
+191,DelIka,,Ika North-East,Delta,DelIka@phcsample.com
+192,DelNdo,,Ndokwa West,Delta,DelNdo@phcsample.com
+193,DelNdo,,Ndokwa East,Delta,DelNdo@phcsample.com
+194,DelIso,,Isoko south,Delta,DelIso@phcsample.com
+195,DelIso,,Isoko North,Delta,DelIso@phcsample.com
+196,DelBom,,Bomadi,Delta,DelBom@phcsample.com
+197,DelBur,,Burutu,Delta,DelBur@phcsample.com
+198,DelUgh,,Ughelli South,Delta,DelUgh@phcsample.com
+199,DelUgh,,Ughelli North,Delta,DelUgh@phcsample.com
+200,DelEth,,Ethiope West,Delta,DelEth@phcsample.com
+201,DelEth,,Ethiope East,Delta,DelEth@phcsample.com
+202,DelSap,,Sapele,Delta,DelSap@phcsample.com
+203,DelOkp,,Okpe,Delta,DelOkp@phcsample.com
+204,DelWar,,Warri North,Delta,DelWar@phcsample.com
+205,DelWar,,Warri South,Delta,DelWar@phcsample.com
+206,DelUvw,,Uvwie,Delta,DelUvw@phcsample.com
+207,DelUdu,,Udu,Delta,DelUdu@phcsample.com
+208,DelWar,,Warri Central,Delta,DelWar@phcsample.com
+209,DelUkw,,Ukwani,Delta,DelUkw@phcsample.com
+210,DelOsh,,Oshimili North,Delta,DelOsh@phcsample.com
+211,DelPat,,Patani,Delta,DelPat@phcsample.com
+212,EboAfi,,Afikpo South,Ebonyi,EboAfi@phcsample.com
+213,EboAfi,,Afikpo North,Ebonyi,EboAfi@phcsample.com
+214,EboOni,,Onicha,Ebonyi,EboOni@phcsample.com
+215,EboOha,,Ohaozara,Ebonyi,EboOha@phcsample.com
+216,EboAba,,Abakaliki,Ebonyi,EboAba@phcsample.com
+217,EboIsh,,Ishielu,Ebonyi,EboIsh@phcsample.com
+218,Ebolkw,,lkwo,Ebonyi,Ebolkw@phcsample.com
+219,EboEzz,,Ezza,Ebonyi,EboEzz@phcsample.com
+220,EboEzz,,Ezza South,Ebonyi,EboEzz@phcsample.com
+221,EboOha,,Ohaukwu,Ebonyi,EboOha@phcsample.com
+222,EboEbo,,Ebonyi,Ebonyi,EboEbo@phcsample.com
+223,EboIvo,,Ivo,Ebonyi,EboIvo@phcsample.com
+224,EnuEnu,,"Enugu South,",Enugu,EnuEnu@phcsample.com
+225,EnuIgb,,Igbo-Eze South,Enugu,EnuIgb@phcsample.com
+226,EnuEnu,,Enugu North,Enugu,EnuEnu@phcsample.com
+227,EnuNka,,Nkanu,Enugu,EnuNka@phcsample.com
+228,EnuUdi,,Udi Agwu,Enugu,EnuUdi@phcsample.com
+229,EnuOji,,Oji-River,Enugu,EnuOji@phcsample.com
+230,EnuEze,,Ezeagu,Enugu,EnuEze@phcsample.com
+231,EnuIgb,,IgboEze North,Enugu,EnuIgb@phcsample.com
+232,EnuIsi,,Isi-Uzo,Enugu,EnuIsi@phcsample.com
+233,EnuNsu,,Nsukka,Enugu,EnuNsu@phcsample.com
+234,EnuIgb,,Igbo-Ekiti,Enugu,EnuIgb@phcsample.com
+235,EnuUzo,,Uzo-Uwani,Enugu,EnuUzo@phcsample.com
+236,EnuEnu,,Enugu Eas,Enugu,EnuEnu@phcsample.com
+237,EnuAni,,Aninri,Enugu,EnuAni@phcsample.com
+238,EnuNka,,Nkanu East,Enugu,EnuNka@phcsample.com
+239,EnuUde,,Udenu.,Enugu,EnuUde@phcsample.com
+240,EdoEsa,,Esan North-East,Edo,EdoEsa@phcsample.com
+241,EdoEsa,,Esan Central,Edo,EdoEsa@phcsample.com
+242,EdoEsa,,Esan West,Edo,EdoEsa@phcsample.com
+243,EdoEgo,,Egor,Edo,EdoEgo@phcsample.com
+244,EdoUkp,,Ukpoba,Edo,EdoUkp@phcsample.com
+245,EdoCen,,Central,Edo,EdoCen@phcsample.com
+246,EdoEts,,Etsako Central,Edo,EdoEts@phcsample.com
+247,EdoIgu,,Igueben,Edo,EdoIgu@phcsample.com
+248,EdoOre,,Oredo,Edo,EdoOre@phcsample.com
+249,EdoOvi,,Ovia SouthWest,Edo,EdoOvi@phcsample.com
+250,EdoOvi,,Ovia South-East,Edo,EdoOvi@phcsample.com
+251,EdoOrh,,Orhionwon,Edo,EdoOrh@phcsample.com
+252,EdoUhu,,Uhunmwonde,Edo,EdoUhu@phcsample.com
+253,EdoEts,,Etsako East,Edo,EdoEts@phcsample.com
+254,EdoEsa,,Esan South-East,Edo,EdoEsa@phcsample.com
+255,EkiAdo,,Ado,Ekiti,EkiAdo@phcsample.com
+256,EkiEki,,Ekiti-East,Ekiti,EkiEki@phcsample.com
+257,EkiEki,,Ekiti-West,Ekiti,EkiEki@phcsample.com
+258,EkiEmu,,Emure/Ise/Orun,Ekiti,EkiEmu@phcsample.com
+259,EkiEki,,Ekiti South-West,Ekiti,EkiEki@phcsample.com
+260,EkiIke,,Ikere Ekiti,Ekiti,EkiIke@phcsample.com
+261,EkiIre,,Irepodun,Ekiti,EkiIre@phcsample.com
+262,EkiIje,,"Ijero,",Ekiti,EkiIje@phcsample.com
+263,EkiIdo,,Ido/Osi,Ekiti,EkiIdo@phcsample.com
+264,EkiOye,,Oye,Ekiti,EkiOye@phcsample.com
+265,EkiIko,,Ikole,Ekiti,EkiIko@phcsample.com
+266,EkiMob,,Moba,Ekiti,EkiMob@phcsample.com
+267,EkiGbo,,Gbonyin,Ekiti,EkiGbo@phcsample.com
+268,EkiEfo,,Efon,Ekiti,EkiEfo@phcsample.com
+269,EkiIse,,Ise/Orun,Ekiti,EkiIse@phcsample.com
+270,EkiIle,,Ilejemeje.,Ekiti,EkiIle@phcsample.com
+271,FCTAba,,Abaji,FCT - Abuja,FCTAba@phcsample.com
+272,FCTAbu,,Abuja Municipal,FCT - Abuja,FCTAbu@phcsample.com
+273,FCTBwa,,Bwari,FCT - Abuja,FCTBwa@phcsample.com
+274,FCTGwa,,Gwagwalada,FCT - Abuja,FCTGwa@phcsample.com
+275,FCTKuj,,Kuje,FCT - Abuja,FCTKuj@phcsample.com
+276,FCTKwa,,Kwali,FCT - Abuja,FCTKwa@phcsample.com
+277,GomAkk,,Akko,Gombe,GomAkk@phcsample.com
+278,GomBal,,Balanga,Gombe,GomBal@phcsample.com
+279,GomBil,,Billiri,Gombe,GomBil@phcsample.com
+280,GomDuk,,Dukku,Gombe,GomDuk@phcsample.com
+281,GomKal,,Kaltungo,Gombe,GomKal@phcsample.com
+282,GomKwa,,Kwami,Gombe,GomKwa@phcsample.com
+283,GomSho,,Shomgom,Gombe,GomSho@phcsample.com
+284,GomFun,,Funakaye,Gombe,GomFun@phcsample.com
+285,GomGom,,Gombe,Gombe,GomGom@phcsample.com
+286,GomNaf,,Nafada/Bajoga,Gombe,GomNaf@phcsample.com
+287,GomYam,,Yamaltu/Delta.,Gombe,GomYam@phcsample.com
+288,ImoAbo,,Aboh-Mbaise,Imo,ImoAbo@phcsample.com
+289,ImoAhi,,Ahiazu-Mbaise,Imo,ImoAhi@phcsample.com
+290,ImoEhi,,Ehime-Mbano,Imo,ImoEhi@phcsample.com
+291,ImoEzi,,Ezinihitte,Imo,ImoEzi@phcsample.com
+292,ImoIde,,Ideato North,Imo,ImoIde@phcsample.com
+293,ImoIde,,Ideato South,Imo,ImoIde@phcsample.com
+294,ImoIhi,,Ihitte/Uboma,Imo,ImoIhi@phcsample.com
+295,ImoIke,,Ikeduru,Imo,ImoIke@phcsample.com
+296,ImoIsi,,Isiala Mbano,Imo,ImoIsi@phcsample.com
+297,ImoIsu,,Isu,Imo,ImoIsu@phcsample.com
+298,ImoMba,,Mbaitoli,Imo,ImoMba@phcsample.com
+299,ImoMba,,Mbaitoli,Imo,ImoMba@phcsample.com
+300,ImoNgo,,Ngor-Okpala,Imo,ImoNgo@phcsample.com
+301,ImoNja,,Njaba,Imo,ImoNja@phcsample.com
+302,ImoNwa,,Nwangele,Imo,ImoNwa@phcsample.com
+303,ImoNkw,,Nkwerre,Imo,ImoNkw@phcsample.com
+304,ImoObo,,Obowo,Imo,ImoObo@phcsample.com
+305,ImoOgu,,Oguta,Imo,ImoOgu@phcsample.com
+306,ImoOha,,Ohaji/Egbema,Imo,ImoOha@phcsample.com
+307,ImoOki,,Okigwe,Imo,ImoOki@phcsample.com
+308,ImoOrl,,Orlu,Imo,ImoOrl@phcsample.com
+309,ImoOrs,,Orsu,Imo,ImoOrs@phcsample.com
+310,ImoOru,,Oru East,Imo,ImoOru@phcsample.com
+311,ImoOru,,Oru West,Imo,ImoOru@phcsample.com
+312,ImoOwe,,Owerri-Municipal,Imo,ImoOwe@phcsample.com
+313,ImoOwe,,Owerri North,Imo,ImoOwe@phcsample.com
+314,ImoOwe,,Owerri West,Imo,ImoOwe@phcsample.com
+315,JigAuy,,Auyo,Jigawa,JigAuy@phcsample.com
+316,JigBab,,Babura,Jigawa,JigBab@phcsample.com
+317,JigBir,,Birni Kudu,Jigawa,JigBir@phcsample.com
+318,JigBir,,Biriniwa,Jigawa,JigBir@phcsample.com
+319,JigBuj,,Buji,Jigawa,JigBuj@phcsample.com
+320,JigDut,,Dutse,Jigawa,JigDut@phcsample.com
+321,JigGag,,Gagarawa,Jigawa,JigGag@phcsample.com
+322,JigGar,,Garki,Jigawa,JigGar@phcsample.com
+323,JigGum,,Gumel,Jigawa,JigGum@phcsample.com
+324,JigGur,,Guri,Jigawa,JigGur@phcsample.com
+325,JigGwa,,Gwaram,Jigawa,JigGwa@phcsample.com
+326,JigGwi,,Gwiwa,Jigawa,JigGwi@phcsample.com
+327,JigHad,,Hadejia,Jigawa,JigHad@phcsample.com
+328,JigJah,,Jahun,Jigawa,JigJah@phcsample.com
+329,JigKaf,,Kafin Hausa,Jigawa,JigKaf@phcsample.com
+330,JigKau,,Kaugama Kazaure,Jigawa,JigKau@phcsample.com
+331,JigKir,,Kiri Kasamma,Jigawa,JigKir@phcsample.com
+332,JigKiy,,Kiyawa,Jigawa,JigKiy@phcsample.com
+333,JigMai,,Maigatari,Jigawa,JigMai@phcsample.com
+334,JigMal,,Malam Madori,Jigawa,JigMal@phcsample.com
+335,JigMig,,Miga,Jigawa,JigMig@phcsample.com
+336,JigRin,,Ringim,Jigawa,JigRin@phcsample.com
+337,JigRon,,Roni,Jigawa,JigRon@phcsample.com
+338,JigSul,,Sule-Tankarkar,Jigawa,JigSul@phcsample.com
+339,JigTau,,Taura,Jigawa,JigTau@phcsample.com
+340,JigYan,,Yankwashi,Jigawa,JigYan@phcsample.com
+341,KadBir,,Birni-Gwari,Kaduna,KadBir@phcsample.com
+342,KadChi,,Chikun,Kaduna,KadChi@phcsample.com
+343,KadGiw,,Giwa,Kaduna,KadGiw@phcsample.com
+344,KadIga,,Igabi,Kaduna,KadIga@phcsample.com
+345,KadIka,,Ikara,Kaduna,KadIka@phcsample.com
+346,Kadjab,,jaba,Kaduna,Kadjab@phcsample.com
+347,KadJem,,Jema'a,Kaduna,KadJem@phcsample.com
+348,KadKac,,Kachia,Kaduna,KadKac@phcsample.com
+349,KadKad,,Kaduna North,Kaduna,KadKad@phcsample.com
+350,KadKad,,Kaduna South,Kaduna,KadKad@phcsample.com
+351,KadKag,,Kagarko,Kaduna,KadKag@phcsample.com
+352,KadKaj,,Kajuru,Kaduna,KadKaj@phcsample.com
+353,KadKau,,Kaura,Kaduna,KadKau@phcsample.com
+354,KadKau,,Kauru,Kaduna,KadKau@phcsample.com
+355,KadKub,,Kubau,Kaduna,KadKub@phcsample.com
+356,KadKud,,Kudan,Kaduna,KadKud@phcsample.com
+357,KadLer,,Lere,Kaduna,KadLer@phcsample.com
+358,KadMak,,Makarfi,Kaduna,KadMak@phcsample.com
+359,KadSab,,Sabon-Gari,Kaduna,KadSab@phcsample.com
+360,KadSan,,Sanga,Kaduna,KadSan@phcsample.com
+361,KadSob,,Soba,Kaduna,KadSob@phcsample.com
+362,KadZan,,Zango-Kataf,Kaduna,KadZan@phcsample.com
+363,KadZar,,Zaria,Kaduna,KadZar@phcsample.com
+364,KanAji,,Ajingi,Kano,KanAji@phcsample.com
+365,KanAlb,,Albasu,Kano,KanAlb@phcsample.com
+366,KanBag,,Bagwai,Kano,KanBag@phcsample.com
+367,KanBeb,,Bebeji,Kano,KanBeb@phcsample.com
+368,KanBic,,Bichi,Kano,KanBic@phcsample.com
+369,KanBun,,Bunkure,Kano,KanBun@phcsample.com
+370,KanDal,,Dala,Kano,KanDal@phcsample.com
+371,KanDam,,Dambatta,Kano,KanDam@phcsample.com
+372,KanDaw,,Dawakin Kudu,Kano,KanDaw@phcsample.com
+373,KanDaw,,Dawakin Tofa,Kano,KanDaw@phcsample.com
+374,KanDog,,Doguwa,Kano,KanDog@phcsample.com
+375,KanFag,,Fagge,Kano,KanFag@phcsample.com
+376,KanGab,,Gabasawa,Kano,KanGab@phcsample.com
+377,KanGar,,Garko,Kano,KanGar@phcsample.com
+378,KanGar,,Garum,Kano,KanGar@phcsample.com
+379,KanMal,,Mallam,Kano,KanMal@phcsample.com
+380,KanGay,,Gaya,Kano,KanGay@phcsample.com
+381,KanGez,,Gezawa,Kano,KanGez@phcsample.com
+382,KanGwa,,Gwale,Kano,KanGwa@phcsample.com
+383,KanGwa,,Gwarzo,Kano,KanGwa@phcsample.com
+384,KanKab,,Kabo,Kano,KanKab@phcsample.com
+385,KanKan,,Kano Municipal,Kano,KanKan@phcsample.com
+386,KanKar,,Karaye,Kano,KanKar@phcsample.com
+387,KanKib,,Kibiya,Kano,KanKib@phcsample.com
+388,KanKir,,Kiru,Kano,KanKir@phcsample.com
+389,Kankum,,kumbotso,Kano,Kankum@phcsample.com
+390,KanKun,,Kunchi,Kano,KanKun@phcsample.com
+391,KanKur,,Kura,Kano,KanKur@phcsample.com
+392,KanMad,,Madobi,Kano,KanMad@phcsample.com
+393,KanMak,,Makoda,Kano,KanMak@phcsample.com
+394,KanMin,,Minjibir,Kano,KanMin@phcsample.com
+395,KanNas,,Nasarawa,Kano,KanNas@phcsample.com
+396,KanRan,,Rano,Kano,KanRan@phcsample.com
+397,KanRim,,Rimin Gado,Kano,KanRim@phcsample.com
+398,KanRog,,Rogo,Kano,KanRog@phcsample.com
+399,KanSha,,Shanono,Kano,KanSha@phcsample.com
+400,KanSum,,Sumaila,Kano,KanSum@phcsample.com
+401,KanTak,,Takali,Kano,KanTak@phcsample.com
+402,KanTar,,Tarauni,Kano,KanTar@phcsample.com
+403,KanTof,,Tofa,Kano,KanTof@phcsample.com
+404,KanTsa,,Tsanyawa,Kano,KanTsa@phcsample.com
+405,KanTud,,Tudun Wada,Kano,KanTud@phcsample.com
+406,KanUng,,Ungogo,Kano,KanUng@phcsample.com
+407,KanWar,,Warawa,Kano,KanWar@phcsample.com
+408,KanWud,,Wudil,Kano,KanWud@phcsample.com
+409,KatBak,,Bakori,Katsina,KatBak@phcsample.com
+410,KatBat,,Batagarawa,Katsina,KatBat@phcsample.com
+411,KatBat,,Batsari,Katsina,KatBat@phcsample.com
+412,KatBau,,Baure,Katsina,KatBau@phcsample.com
+413,KatBin,,Bindawa,Katsina,KatBin@phcsample.com
+414,KatCha,,Charanchi,Katsina,KatCha@phcsample.com
+415,KatDan,,Dandume,Katsina,KatDan@phcsample.com
+416,KatDan,,Danja,Katsina,KatDan@phcsample.com
+417,KatDan,,Dan Musa,Katsina,KatDan@phcsample.com
+418,KatDau,,Daura,Katsina,KatDau@phcsample.com
+419,KatDut,,Dutsi,Katsina,KatDut@phcsample.com
+420,KatDut,,Dutsin-Ma,Katsina,KatDut@phcsample.com
+421,KatFas,,Faskari,Katsina,KatFas@phcsample.com
+422,KatFun,,Funtua,Katsina,KatFun@phcsample.com
+423,KatIng,,Ingawa,Katsina,KatIng@phcsample.com
+424,KatJib,,Jibia,Katsina,KatJib@phcsample.com
+425,KatKaf,,Kafur,Katsina,KatKaf@phcsample.com
+426,KatKai,,Kaita,Katsina,KatKai@phcsample.com
+427,KatKan,,Kankara,Katsina,KatKan@phcsample.com
+428,KatKan,,Kankia,Katsina,KatKan@phcsample.com
+429,KatKat,,Katsina,Katsina,KatKat@phcsample.com
+430,KatKur,,Kurfi,Katsina,KatKur@phcsample.com
+431,KatKus,,Kusada,Katsina,KatKus@phcsample.com
+432,KatMai,,Mai'Adua,Katsina,KatMai@phcsample.com
+433,KatMal,,Malumfashi,Katsina,KatMal@phcsample.com
+434,KatMan,,Mani,Katsina,KatMan@phcsample.com
+435,KatMas,,Mashi,Katsina,KatMas@phcsample.com
+436,KatMat,,Matazuu,Katsina,KatMat@phcsample.com
+437,KatMus,,Musawa,Katsina,KatMus@phcsample.com
+438,KatRim,,Rimi,Katsina,KatRim@phcsample.com
+439,KatSab,,Sabuwa,Katsina,KatSab@phcsample.com
+440,KatSaf,,Safana,Katsina,KatSaf@phcsample.com
+441,KatSan,,Sandamu,Katsina,KatSan@phcsample.com
+442,KatZan,,Zango,Katsina,KatZan@phcsample.com
+443,KebAle,,Aleiro,Kebbi,KebAle@phcsample.com
+444,KebAre,,Arewa-Dandi,Kebbi,KebAre@phcsample.com
+445,KebArg,,Argungu,Kebbi,KebArg@phcsample.com
+446,KebAug,,Augie,Kebbi,KebAug@phcsample.com
+447,KebBag,,Bagudo,Kebbi,KebBag@phcsample.com
+448,KebBir,,Birnin Kebbi,Kebbi,KebBir@phcsample.com
+449,KebBun,,Bunza,Kebbi,KebBun@phcsample.com
+450,KebDan,,Dandi,Kebbi,KebDan@phcsample.com
+451,KebFak,,Fakai,Kebbi,KebFak@phcsample.com
+452,KebGwa,,Gwandu,Kebbi,KebGwa@phcsample.com
+453,KebJeg,,Jega,Kebbi,KebJeg@phcsample.com
+454,KebKal,,Kalgo,Kebbi,KebKal@phcsample.com
+455,KebKok,,Koko/Besse,Kebbi,KebKok@phcsample.com
+456,KebMai,,Maiyama,Kebbi,KebMai@phcsample.com
+457,KebNga,,Ngaski,Kebbi,KebNga@phcsample.com
+458,KebSak,,Sakaba,Kebbi,KebSak@phcsample.com
+459,KebSha,,Shanga,Kebbi,KebSha@phcsample.com
+460,KebSur,,Suru,Kebbi,KebSur@phcsample.com
+461,KebWas,,Wasagu/Danko,Kebbi,KebWas@phcsample.com
+462,KebYau,,Yauri,Kebbi,KebYau@phcsample.com
+463,KebZur,,Zuru,Kebbi,KebZur@phcsample.com
+464,KogAda,,Adavi,Kogi,KogAda@phcsample.com
+465,KogAja,,Ajaokuta,Kogi,KogAja@phcsample.com
+466,KogAnk,,Ankpa,Kogi,KogAnk@phcsample.com
+467,KogBas,,Bassa,Kogi,KogBas@phcsample.com
+468,KogDek,,Dekina,Kogi,KogDek@phcsample.com
+469,KogIba,,Ibaji,Kogi,KogIba@phcsample.com
+470,KogIda,,Idah,Kogi,KogIda@phcsample.com
+471,KogIga,,Igalamela-Odolu,Kogi,KogIga@phcsample.com
+472,KogIju,,Ijumu,Kogi,KogIju@phcsample.com
+473,KogKab,,Kabba/Bunu,Kogi,KogKab@phcsample.com
+474,KogKog,,Kogi,Kogi,KogKog@phcsample.com
+475,KogLok,,Lokoja,Kogi,KogLok@phcsample.com
+476,KogMop,,Mopa-Muro,Kogi,KogMop@phcsample.com
+477,KogOfu,,Ofu,Kogi,KogOfu@phcsample.com
+478,KogOgo,,Ogori/Mangongo,Kogi,KogOgo@phcsample.com
+479,KogOke,,Okehi,Kogi,KogOke@phcsample.com
+480,KogOke,,Okene,Kogi,KogOke@phcsample.com
+481,KogOla,,Olamabolo,Kogi,KogOla@phcsample.com
+482,KogOma,,Omala,Kogi,KogOma@phcsample.com
+483,KogYag,,Yagba East,Kogi,KogYag@phcsample.com
+484,KogYag,,Yagba West,Kogi,KogYag@phcsample.com
+485,KwaAsa,,Asa,Kwara,KwaAsa@phcsample.com
+486,KwaBar,,Baruten,Kwara,KwaBar@phcsample.com
+487,KwaEdu,,Edu,Kwara,KwaEdu@phcsample.com
+488,KwaEki,,Ekiti,Kwara,KwaEki@phcsample.com
+489,KwaIfe,,Ifelodun,Kwara,KwaIfe@phcsample.com
+490,KwaIlo,,Ilorin East,Kwara,KwaIlo@phcsample.com
+491,KwaIlo,,Ilorin West,Kwara,KwaIlo@phcsample.com
+492,KwaIre,,Irepodun,Kwara,KwaIre@phcsample.com
+493,KwaIsi,,Isin,Kwara,KwaIsi@phcsample.com
+494,KwaKai,,Kaiama,Kwara,KwaKai@phcsample.com
+495,KwaMor,,Moro,Kwara,KwaMor@phcsample.com
+496,KwaOff,,Offa,Kwara,KwaOff@phcsample.com
+497,KwaOke,,Oke-Ero,Kwara,KwaOke@phcsample.com
+498,KwaOyu,,Oyun,Kwara,KwaOyu@phcsample.com
+499,KwaPat,,Pategi,Kwara,KwaPat@phcsample.com
+500,LagAge,,Agege,Lagos,LagAge@phcsample.com
+501,LagAje,,Ajeromi-Ifelodun,Lagos,LagAje@phcsample.com
+502,LagAli,,Alimosho,Lagos,LagAli@phcsample.com
+503,LagAmu,,Amuwo-Odofin,Lagos,LagAmu@phcsample.com
+504,LagApa,,Apapa,Lagos,LagApa@phcsample.com
+505,LagBad,,Badagry,Lagos,LagBad@phcsample.com
+506,LagEpe,,Epe,Lagos,LagEpe@phcsample.com
+507,LagEti,,Eti-Osa,Lagos,LagEti@phcsample.com
+508,LagIbe,,Ibeju/Lekki,Lagos,LagIbe@phcsample.com
+509,LagIfa,,Ifako-Ijaye,Lagos,LagIfa@phcsample.com
+510,LagIke,,Ikeja,Lagos,LagIke@phcsample.com
+511,LagIko,,Ikorodu,Lagos,LagIko@phcsample.com
+512,LagKos,,Kosofe,Lagos,LagKos@phcsample.com
+513,LagLag,,Lagos Island,Lagos,LagLag@phcsample.com
+514,LagLag,,Lagos Mainland,Lagos,LagLag@phcsample.com
+515,LagMus,,Mushin,Lagos,LagMus@phcsample.com
+516,LagOjo,,Ojo,Lagos,LagOjo@phcsample.com
+517,LagOsh,,Oshodi-Isolo,Lagos,LagOsh@phcsample.com
+518,LagSho,,Shomolu,Lagos,LagSho@phcsample.com
+519,LagSur,,Surulere,Lagos,LagSur@phcsample.com
+520,NasAkw,,Akwanga,Nasarawa,NasAkw@phcsample.com
+521,NasAwe,,Awe,Nasarawa,NasAwe@phcsample.com
+522,NasDom,,Doma,Nasarawa,NasDom@phcsample.com
+523,NasKar,,Karu,Nasarawa,NasKar@phcsample.com
+524,NasKea,,Keana,Nasarawa,NasKea@phcsample.com
+525,NasKef,,Keffi,Nasarawa,NasKef@phcsample.com
+526,NasKok,,Kokona,Nasarawa,NasKok@phcsample.com
+527,NasLaf,,Lafia,Nasarawa,NasLaf@phcsample.com
+528,NasNas,,Nasarawa,Nasarawa,NasNas@phcsample.com
+529,NasNas,,Nasarawa-Eggon,Nasarawa,NasNas@phcsample.com
+530,NasObi,,Obi,Nasarawa,NasObi@phcsample.com
+531,NasTot,,Toto,Nasarawa,NasTot@phcsample.com
+532,NasWam,,Wamba,Nasarawa,NasWam@phcsample.com
+533,NigAga,,Agaie,Niger,NigAga@phcsample.com
+534,NigAgw,,Agwara,Niger,NigAgw@phcsample.com
+535,NigBid,,Bida,Niger,NigBid@phcsample.com
+536,NigBor,,Borgu,Niger,NigBor@phcsample.com
+537,NigBos,,Bosso,Niger,NigBos@phcsample.com
+538,NigCha,,Chanchaga,Niger,NigCha@phcsample.com
+539,NigEda,,Edati,Niger,NigEda@phcsample.com
+540,NigGba,,Gbako,Niger,NigGba@phcsample.com
+541,NigGur,,Gurara,Niger,NigGur@phcsample.com
+542,NigKat,,Katcha,Niger,NigKat@phcsample.com
+543,NigKon,,Kontagora,Niger,NigKon@phcsample.com
+544,NigLap,,Lapai,Niger,NigLap@phcsample.com
+545,NigLav,,Lavun,Niger,NigLav@phcsample.com
+546,NigMag,,Magama,Niger,NigMag@phcsample.com
+547,NigMar,,Mariga,Niger,NigMar@phcsample.com
+548,NigMas,,Mashegu,Niger,NigMas@phcsample.com
+549,NigMok,,Mokwa,Niger,NigMok@phcsample.com
+550,NigMuy,,Muya,Niger,NigMuy@phcsample.com
+551,NigPai,,Pailoro,Niger,NigPai@phcsample.com
+552,NigRaf,,Rafi,Niger,NigRaf@phcsample.com
+553,NigRij,,Rijau,Niger,NigRij@phcsample.com
+554,NigShi,,Shiroro,Niger,NigShi@phcsample.com
+555,NigSul,,Suleja,Niger,NigSul@phcsample.com
+556,NigTaf,,Tafa,Niger,NigTaf@phcsample.com
+557,NigWus,,Wushishi,Niger,NigWus@phcsample.com
+558,OguAbe,,Abeokuta North,Ogun,OguAbe@phcsample.com
+559,OguAbe,,Abeokuta South,Ogun,OguAbe@phcsample.com
+560,OguAdo,,Ado-Odo/Ota,Ogun,OguAdo@phcsample.com
+561,OguEgb,,Egbado North,Ogun,OguEgb@phcsample.com
+562,OguEgb,,Egbado South,Ogun,OguEgb@phcsample.com
+563,OguEwe,,Ewekoro,Ogun,OguEwe@phcsample.com
+564,OguIfo,,Ifo,Ogun,OguIfo@phcsample.com
+565,OguIje,,Ijebu East,Ogun,OguIje@phcsample.com
+566,OguIje,,Ijebu North,Ogun,OguIje@phcsample.com
+567,OguIje,,Ijebu North East,Ogun,OguIje@phcsample.com
+568,OguIje,,Ijebu Ode,Ogun,OguIje@phcsample.com
+569,OguIke,,Ikenne,Ogun,OguIke@phcsample.com
+570,OguIme,,Imeko-Afon,Ogun,OguIme@phcsample.com
+571,OguIpo,,Ipokia,Ogun,OguIpo@phcsample.com
+572,OguOba,,Obafemi-Owode,Ogun,OguOba@phcsample.com
+573,OguOgu,,Ogun Waterside,Ogun,OguOgu@phcsample.com
+574,OguOde,,Odeda,Ogun,OguOde@phcsample.com
+575,OguOdo,,Odogbolu,Ogun,OguOdo@phcsample.com
+576,OguRem,,Remo North,Ogun,OguRem@phcsample.com
+577,OguSha,,Shagamu,Ogun,OguSha@phcsample.com
+578,OndAko,,Akoko North East,Ondo,OndAko@phcsample.com
+579,OndAko,,Akoko North West,Ondo,OndAko@phcsample.com
+580,OndAko,,Akoko South Akure East,Ondo,OndAko@phcsample.com
+581,OndAko,,Akoko South West,Ondo,OndAko@phcsample.com
+582,OndAku,,Akure North,Ondo,OndAku@phcsample.com
+583,OndAku,,Akure South,Ondo,OndAku@phcsample.com
+584,OndEse,,Ese-Odo,Ondo,OndEse@phcsample.com
+585,OndIda,,Idanre,Ondo,OndIda@phcsample.com
+586,OndIfe,,Ifedore,Ondo,OndIfe@phcsample.com
+587,OndIla,,Ilaje,Ondo,OndIla@phcsample.com
+588,OndIle,,Ile-Oluji,Ondo,OndIle@phcsample.com
+589,OndOke,,Okeigbo,Ondo,OndOke@phcsample.com
+590,OndIre,,Irele,Ondo,OndIre@phcsample.com
+591,OndOdi,,Odigbo,Ondo,OndOdi@phcsample.com
+592,OndOki,,Okitipupa,Ondo,OndOki@phcsample.com
+593,OndOnd,,Ondo East,Ondo,OndOnd@phcsample.com
+594,OndOnd,,Ondo West,Ondo,OndOnd@phcsample.com
+595,OndOse,,Ose,Ondo,OndOse@phcsample.com
+596,OndOwo,,Owo,Ondo,OndOwo@phcsample.com
+597,OsuAiy,,Aiyedade,Osun,OsuAiy@phcsample.com
+598,OsuAiy,,Aiyedire,Osun,OsuAiy@phcsample.com
+599,OsuAta,,Atakumosa East,Osun,OsuAta@phcsample.com
+600,OsuAta,,Atakumosa West,Osun,OsuAta@phcsample.com
+601,OsuBol,,Boluwaduro,Osun,OsuBol@phcsample.com
+602,OsuBor,,Boripe,Osun,OsuBor@phcsample.com
+603,OsuEde,,Ede North,Osun,OsuEde@phcsample.com
+604,OsuEde,,Ede South,Osun,OsuEde@phcsample.com
+605,OsuEgb,,Egbedore,Osun,OsuEgb@phcsample.com
+606,OsuEji,,Ejigbo,Osun,OsuEji@phcsample.com
+607,OsuIfe,,Ife Central,Osun,OsuIfe@phcsample.com
+608,OsuIfe,,Ife East,Osun,OsuIfe@phcsample.com
+609,OsuIfe,,Ife North,Osun,OsuIfe@phcsample.com
+610,OsuIfe,,Ife South,Osun,OsuIfe@phcsample.com
+611,OsuIfe,,Ifedayo,Osun,OsuIfe@phcsample.com
+612,OsuIfe,,Ifelodun,Osun,OsuIfe@phcsample.com
+613,OsuIla,,Ila,Osun,OsuIla@phcsample.com
+614,OsuIle,,Ilesha East,Osun,OsuIle@phcsample.com
+615,OsuIle,,Ilesha West,Osun,OsuIle@phcsample.com
+616,OsuIre,,Irepodun,Osun,OsuIre@phcsample.com
+617,OsuIre,,Irewole,Osun,OsuIre@phcsample.com
+618,OsuIso,,Isokan,Osun,OsuIso@phcsample.com
+619,OsuIwo,,Iwo,Osun,OsuIwo@phcsample.com
+620,OsuObo,,Obokun,Osun,OsuObo@phcsample.com
+621,OsuOdo,,Odo-Otin,Osun,OsuOdo@phcsample.com
+622,OsuOla,,Ola-Oluwa,Osun,OsuOla@phcsample.com
+623,OsuOlo,,Olorunda,Osun,OsuOlo@phcsample.com
+624,OsuOri,,Oriade,Osun,OsuOri@phcsample.com
+625,OsuOro,,Orolu,Osun,OsuOro@phcsample.com
+626,OsuOso,,Osogbo,Osun,OsuOso@phcsample.com
+627,OyoAfi,,Afijio,Oyo,OyoAfi@phcsample.com
+628,OyoAki,,Akinyele,Oyo,OyoAki@phcsample.com
+629,OyoAti,,Atiba,Oyo,OyoAti@phcsample.com
+630,OyoAti,,Atigbo,Oyo,OyoAti@phcsample.com
+631,OyoEgb,,Egbeda,Oyo,OyoEgb@phcsample.com
+632,OyoIba,,Ibadan Central,Oyo,OyoIba@phcsample.com
+633,OyoIba,,Ibadan North,Oyo,OyoIba@phcsample.com
+634,OyoIba,,Ibadan North West,Oyo,OyoIba@phcsample.com
+635,OyoIba,,Ibadan South East,Oyo,OyoIba@phcsample.com
+636,OyoIba,,Ibadan South West,Oyo,OyoIba@phcsample.com
+637,OyoIba,,Ibarapa Central,Oyo,OyoIba@phcsample.com
+638,OyoIba,,Ibarapa East,Oyo,OyoIba@phcsample.com
+639,OyoIba,,Ibarapa North,Oyo,OyoIba@phcsample.com
+640,OyoIdo,,Ido,Oyo,OyoIdo@phcsample.com
+641,OyoIre,,Irepo,Oyo,OyoIre@phcsample.com
+642,OyoIse,,Iseyin,Oyo,OyoIse@phcsample.com
+643,OyoIte,,Itesiwaju,Oyo,OyoIte@phcsample.com
+644,OyoIwa,,Iwajowa,Oyo,OyoIwa@phcsample.com
+645,OyoKaj,,Kajola,Oyo,OyoKaj@phcsample.com
+646,OyoLag,,Lagelu Ogbomosho North,Oyo,OyoLag@phcsample.com
+647,OyoOgb,,Ogbomosho South,Oyo,OyoOgb@phcsample.com
+648,OyoOgo,,Ogo Oluwa,Oyo,OyoOgo@phcsample.com
+649,OyoOlo,,Olorunsogo,Oyo,OyoOlo@phcsample.com
+650,OyoOlu,,Oluyole,Oyo,OyoOlu@phcsample.com
+651,OyoOna,,Ona-Ara,Oyo,OyoOna@phcsample.com
+652,OyoOre,,Orelope,Oyo,OyoOre@phcsample.com
+653,OyoOri,,Ori Ire,Oyo,OyoOri@phcsample.com
+654,OyoOyo,,Oyo East,Oyo,OyoOyo@phcsample.com
+655,OyoOyo,,Oyo West,Oyo,OyoOyo@phcsample.com
+656,OyoSak,,Saki East,Oyo,OyoSak@phcsample.com
+657,OyoSak,,Saki West,Oyo,OyoSak@phcsample.com
+658,OyoSur,,Surulere,Oyo,OyoSur@phcsample.com
+659,PlaBar,,Barikin Ladi,Plateau,PlaBar@phcsample.com
+660,PlaBas,,Bassa,Plateau,PlaBas@phcsample.com
+661,PlaBok,,Bokkos,Plateau,PlaBok@phcsample.com
+662,PlaJos,,Jos East,Plateau,PlaJos@phcsample.com
+663,PlaJos,,Jos North,Plateau,PlaJos@phcsample.com
+664,PlaJos,,Jos South,Plateau,PlaJos@phcsample.com
+665,PlaKan,,Kanam,Plateau,PlaKan@phcsample.com
+666,PlaKan,,Kanke,Plateau,PlaKan@phcsample.com
+667,PlaLan,,Langtang North,Plateau,PlaLan@phcsample.com
+668,PlaLan,,Langtang South,Plateau,PlaLan@phcsample.com
+669,PlaMan,,Mangu,Plateau,PlaMan@phcsample.com
+670,PlaMik,,Mikang,Plateau,PlaMik@phcsample.com
+671,PlaPan,,Pankshin,Plateau,PlaPan@phcsample.com
+672,PlaQua,,Qua'an Pan,Plateau,PlaQua@phcsample.com
+673,PlaRiy,,Riyom,Plateau,PlaRiy@phcsample.com
+674,PlaShe,,Shendam,Plateau,PlaShe@phcsample.com
+675,PlaWas,,Wase,Plateau,PlaWas@phcsample.com
+676,RivAbu,,Abua/Odual,Rivers,RivAbu@phcsample.com
+677,RivAho,,Ahoada East,Rivers,RivAho@phcsample.com
+678,RivAho,,Ahoada West,Rivers,RivAho@phcsample.com
+679,RivAku,,Akuku Toru,Rivers,RivAku@phcsample.com
+680,RivAnd,,Andoni,Rivers,RivAnd@phcsample.com
+681,RivAsa,,Asari-Toru,Rivers,RivAsa@phcsample.com
+682,RivBon,,Bonny,Rivers,RivBon@phcsample.com
+683,RivDeg,,Degema,Rivers,RivDeg@phcsample.com
+684,RivEmo,,Emohua,Rivers,RivEmo@phcsample.com
+685,RivEle,,Eleme,Rivers,RivEle@phcsample.com
+686,RivEtc,,Etche,Rivers,RivEtc@phcsample.com
+687,RivGok,,Gokana,Rivers,RivGok@phcsample.com
+688,RivIkw,,Ikwerre,Rivers,RivIkw@phcsample.com
+689,RivKha,,Khana,Rivers,RivKha@phcsample.com
+690,RivObi,,Obia/Akpor,Rivers,RivObi@phcsample.com
+691,RivOgb,,Ogba/Egbema/Ndoni,Rivers,RivOgb@phcsample.com
+692,RivOgu,,Ogu/Bolo,Rivers,RivOgu@phcsample.com
+693,RivOkr,,Okrika,Rivers,RivOkr@phcsample.com
+694,RivOmu,,Omumma,Rivers,RivOmu@phcsample.com
+695,RivOpo,,Opobo/Nkoro,Rivers,RivOpo@phcsample.com
+696,RivOyi,,Oyigbo,Rivers,RivOyi@phcsample.com
+697,RivPor,,Port-Harcourt,Rivers,RivPor@phcsample.com
+698,RivTai,,Tai,Rivers,RivTai@phcsample.com
+699,SokBin,,Binji,Sokoto,SokBin@phcsample.com
+700,SokBod,,Bodinga,Sokoto,SokBod@phcsample.com
+701,SokDan,,Dange-shnsi,Sokoto,SokDan@phcsample.com
+702,SokGad,,Gada,Sokoto,SokGad@phcsample.com
+703,SokGor,,Goronyo,Sokoto,SokGor@phcsample.com
+704,SokGud,,Gudu,Sokoto,SokGud@phcsample.com
+705,SokGaw,,Gawabawa,Sokoto,SokGaw@phcsample.com
+706,SokIll,,Illela,Sokoto,SokIll@phcsample.com
+707,SokIsa,,Isa,Sokoto,SokIsa@phcsample.com
+708,SokKwa,,Kware,Sokoto,SokKwa@phcsample.com
+709,Sokkeb,,kebbe,Sokoto,Sokkeb@phcsample.com
+710,SokRab,,Rabah,Sokoto,SokRab@phcsample.com
+711,SokSab,,Sabon birni,Sokoto,SokSab@phcsample.com
+712,SokSha,,Shagari,Sokoto,SokSha@phcsample.com
+713,SokSil,,Silame,Sokoto,SokSil@phcsample.com
+714,SokSok,,Sokoto North,Sokoto,SokSok@phcsample.com
+715,SokSok,,Sokoto South,Sokoto,SokSok@phcsample.com
+716,SokTam,,Tambuwal,Sokoto,SokTam@phcsample.com
+717,SokTqn,,Tqngaza,Sokoto,SokTqn@phcsample.com
+718,SokTur,,Tureta,Sokoto,SokTur@phcsample.com
+719,SokWam,,Wamako,Sokoto,SokWam@phcsample.com
+720,SokWur,,Wurno,Sokoto,SokWur@phcsample.com
+721,SokYab,,Yabo,Sokoto,SokYab@phcsample.com
+722,TarArd,,Ardo-kola,Taraba,TarArd@phcsample.com
+723,TarBal,,Bali,Taraba,TarBal@phcsample.com
+724,TarDon,,Donga,Taraba,TarDon@phcsample.com
+725,TarGas,,Gashaka,Taraba,TarGas@phcsample.com
+726,TarCas,,Cassol,Taraba,TarCas@phcsample.com
+727,TarIbi,,Ibi,Taraba,TarIbi@phcsample.com
+728,TarJal,,Jalingo,Taraba,TarJal@phcsample.com
+729,TarKar,,Karin-Lamido,Taraba,TarKar@phcsample.com
+730,TarKur,,Kurmi,Taraba,TarKur@phcsample.com
+731,TarLau,,Lau,Taraba,TarLau@phcsample.com
+732,TarSar,,Sardauna,Taraba,TarSar@phcsample.com
+733,TarTak,,Takum,Taraba,TarTak@phcsample.com
+734,TarUss,,Ussa,Taraba,TarUss@phcsample.com
+735,TarWuk,,Wukari,Taraba,TarWuk@phcsample.com
+736,TarYor,,Yorro,Taraba,TarYor@phcsample.com
+737,TarZin,,Zing,Taraba,TarZin@phcsample.com
+738,YobBad,,Bade,Yobe,YobBad@phcsample.com
+739,YobBur,,Bursari,Yobe,YobBur@phcsample.com
+740,YobDam,,Damaturu,Yobe,YobDam@phcsample.com
+741,YobFik,,Fika,Yobe,YobFik@phcsample.com
+742,YobFun,,Fune,Yobe,YobFun@phcsample.com
+743,YobGei,,Geidam,Yobe,YobGei@phcsample.com
+744,YobGuj,,Gujba,Yobe,YobGuj@phcsample.com
+745,YobGul,,Gulani,Yobe,YobGul@phcsample.com
+746,YobJak,,Jakusko,Yobe,YobJak@phcsample.com
+747,YobKar,,Karasuwa,Yobe,YobKar@phcsample.com
+748,YobKar,,Karawa,Yobe,YobKar@phcsample.com
+749,YobMac,,Machina,Yobe,YobMac@phcsample.com
+750,YobNan,,Nangere,Yobe,YobNan@phcsample.com
+751,YobNgu,,Nguru Potiskum,Yobe,YobNgu@phcsample.com
+752,YobTar,,Tarmua,Yobe,YobTar@phcsample.com
+753,YobYun,,Yunusari,Yobe,YobYun@phcsample.com
+754,YobYus,,Yusufari,Yobe,YobYus@phcsample.com
+755,ZamAnk,,Anka,Zamfara,ZamAnk@phcsample.com
+756,ZamBak,,Bakura,Zamfara,ZamBak@phcsample.com
+757,ZamBir,,Birnin Magaji,Zamfara,ZamBir@phcsample.com
+758,ZamBuk,,Bukkuyum,Zamfara,ZamBuk@phcsample.com
+759,ZamBun,,Bungudu,Zamfara,ZamBun@phcsample.com
+760,ZamGum,,Gummi,Zamfara,ZamGum@phcsample.com
+761,ZamGus,,Gusau,Zamfara,ZamGus@phcsample.com
+762,ZamKau,,Kaura,Zamfara,ZamKau@phcsample.com
+763,ZamNam,,Namoda,Zamfara,ZamNam@phcsample.com
+764,ZamMar,,Maradun,Zamfara,ZamMar@phcsample.com
+765,ZamMar,,Maru,Zamfara,ZamMar@phcsample.com
+766,ZamShi,,Shinkafi,Zamfara,ZamShi@phcsample.com
+767,ZamTal,,Talata Mafara,Zamfara,ZamTal@phcsample.com
+768,ZamTsa,,Tsafe,Zamfara,ZamTsa@phcsample.com
+769,ZamZur,,Zurmi,Zamfara,ZamZur@phcsample.com

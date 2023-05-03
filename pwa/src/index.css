@@ -23,9 +23,9 @@ body{
 }
 .mainCard{
     background-color: rgb(252, 252, 252);
-    width: 30rem;
+    width: 40rem;
     padding: 4rem 3rem;
-    box-shadow: 5px 2px 8px  #cadcdf;
+    box-shadow: 5px 2px 8px  #cadcdf17;
     border-radius: 12px;
     text-align: center;
 }

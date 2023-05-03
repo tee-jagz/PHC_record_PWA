@@ -90,16 +90,16 @@ function PatientDetails() {
         <Form.Item label="Occupation" name="occupation" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Occupation" />
         </Form.Item>
-        <Form.Item label="Blood Group" name="bloodGroup">
+        <Form.Item label="Blood Group" name="bloodGroup" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Blood Group" />
         </Form.Item>
-        <Form.Item label="Genotype" name="genotype">
+        <Form.Item label="Genotype" name="genotype" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Genotype" />
         </Form.Item>
-        <Form.Item label="Next of Kin" name="nextOfKin">
+        <Form.Item label="Next of Kin" name="nextOfKin" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Next of Kin" />
           </Form.Item>
-        <Form.Item label="Facility ID" name="facilityID">
+        <Form.Item label="Facility ID" name="facilityId" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Facility ID" />
         </Form.Item>
 

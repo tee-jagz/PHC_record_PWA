@@ -77,6 +77,7 @@ function DoctorDashboard() {
   return (
     <div>
       <h1>Doctor Dashboard</h1>
+      <div id="patientContainer">
       <div id="patientInfo">
 
         <div className="patientCard">
@@ -100,7 +101,7 @@ function DoctorDashboard() {
           <h3>Patient Name</h3>
           <h2>{patient.firstName} {patient.lastName}</h2>
         </div>
-
+      </div>
       </div>
 
       <div className="dashContainer">
