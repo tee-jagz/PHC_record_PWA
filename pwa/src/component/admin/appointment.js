@@ -25,7 +25,7 @@ const AddAppointment = () => {
       appointmentTime,
       reason,
       status,
-      facilityId: 1,
+      facilityId: parseInt(user.facilityID),
       doctorId: 1,
       synced: false,
     };

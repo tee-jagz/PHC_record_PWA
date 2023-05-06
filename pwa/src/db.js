@@ -79,7 +79,6 @@ function openIndexedDB() {
     };
 
     request.onsuccess = async (event) => {
-      console.log("IndexedDB opened successfully.");
       const db = event.target.result;
     
       const patientStore = db.transaction("patients", "readonly").objectStore("patients");

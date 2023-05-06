@@ -25,8 +25,11 @@ useEffect(() => {
     const visitsRequest = visitsIndex.getAll("Active");
   
     visitsRequest.onsuccess = async () => {
-      const visitList = visitsRequest.result;
-      const activeVisitsWithPatientsPromises = visitList.map((visit) => {
+      //const visitList = visitsRequest.result;
+
+      const filteredVisitList = visitsRequest.result.filter(visit => visit.facilityId === parseInt(user.facilityID));
+
+      const activeVisitsWithPatientsPromises = filteredVisitList.map((visit) => {
         return new Promise((resolve) => {
           const patientRequest = patientsStore.get(visit.patientId);
           patientRequest.onsuccess = () => {

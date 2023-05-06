@@ -23,7 +23,6 @@ const LoginForm = () => {
 
   const onFinish = async (values) => {
     try {
-      console.log(values);
       await login(values.username, values.password);
     } catch (err) {
       setError(err.message);

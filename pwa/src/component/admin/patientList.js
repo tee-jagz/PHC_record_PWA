@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Table } from "antd";
 import { useNavigate } from "react-router-dom";
 import openIndexedDB from "./../../db";
+import { useAuth} from "./../../useAuth";
 
 function PatientList() {
   const [patients, setPatients] = useState([]);
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   useEffect(() => {
     fetchPatients();
@@ -18,7 +20,8 @@ function PatientList() {
     const request = patientStore.getAll();
 
     request.onsuccess = () => {
-      setPatients(request.result);
+      const filteredPatients = request.result.filter(patient => patient.facilityID === user.facilityID);
+      setPatients(filteredPatients);
     };
 
     request.onerror = () => {
