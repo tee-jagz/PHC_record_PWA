@@ -20,7 +20,7 @@ function PatientList() {
     const request = patientStore.getAll();
 
     request.onsuccess = () => {
-      const filteredPatients = request.result.filter(patient => patient.facilityID === user.facilityID);
+      const filteredPatients = request.result.filter(patient => patient.facilityId === user.facilityID);
       setPatients(filteredPatients);
     };
 

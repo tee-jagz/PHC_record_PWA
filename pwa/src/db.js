@@ -30,7 +30,7 @@ function openIndexedDB() {
       patientStore.createIndex("bloodGroup", "bloodGroup", { unique: false });
       patientStore.createIndex("genotype", "genotype", { unique: false });
       patientStore.createIndex("nextOfKin", "nextOfKin", { unique: false });
-      patientStore.createIndex("facilityID", "facilityID", { unique: false });
+      patientStore.createIndex("facilityId", "facilityId", { unique: false });
       patientStore.createIndex("synced", "synced", { unique: false });
 
       // Create the Visit table

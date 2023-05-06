@@ -99,7 +99,7 @@ function PatientDetails() {
         <Form.Item label="Next of Kin" name="nextOfKin" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Next of Kin" />
           </Form.Item>
-        <Form.Item label="Facility ID" name="facilityID" rules={[{ required: true, message: 'Please input the occupation!' }]}>
+        <Form.Item label="Facility ID" name="facilityId" rules={[{ required: true, message: 'Please input the occupation!' }]}>
           <Input placeholder="Facility ID" />
         </Form.Item>
 
