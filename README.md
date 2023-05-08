@@ -23,14 +23,22 @@ A progressive web app (PWA) designed for the effective management of hospital op
 
 1. Ensure Docker and Docker Compose are installed on your system.
 2. Create a .env file in the pwa directory with the following environment variables:
-   `PORT=3000`
+   ```env
+   PORT=3000
+   ```
 3. Create a .env file in the api directory with the following environment variables:
-   `SQL_CONN_STR=Driver={ODBC Driver 17 for SQL Server};Server=med-pwa-project.database.windows.net;Database=med_app_db;Uid=medapp;Pwd=MED@ppPW1!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;`
+   ```env
+   SQL_CONN_STR=Driver={ODBC Driver 17 for SQL Server};Server=med-pwa-project.database.windows.net;Database=med_app_db;Uid=medapp;Pwd=MED@ppPW1!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+   ```
 4. Build and start the Docker containers using Docker Compose:
-   `docker-compose up -d --build`
+   ```
+   docker-compose up -d --build
+   ```
    This will build and run both the API and the React PWA in Docker containers. The application will be accessible at `http://localhost:3000`.
 5. To stop and remove the containers, run:
-   `docker-compose down`
+   ```
+   docker-compose down
+   ```
 
 ## Technologies Used
 
