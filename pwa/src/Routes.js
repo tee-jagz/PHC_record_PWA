@@ -1,8 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ProtectedRoute from "./component/ProtectedRoute";
-
-
 import RegisterPage from './component/register/register';
 import LoginPage from './component/login/login';  
 import PatientForm from './component/admin/patientreg';
